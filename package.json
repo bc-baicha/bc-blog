@@ -1,0 +1,19 @@
+{
+  "name": "vuetest",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^2.0.1",
+    "less": "^4.1.2",
+    "vue": "^3.2.26",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.4",
+    "vite": "^2.7.12"
+  }
+}
