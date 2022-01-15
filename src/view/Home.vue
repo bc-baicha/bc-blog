@@ -3,13 +3,15 @@
     <Topnav />
     <main>
       <img class="bc-home-img" src="../assets/home.gif" alt="" />
+      <Playtext text="今天也是元气满满的一天~~" :width="370" />
     </main>
   </div>
 </template>
 <script lang="ts">
 import Topnav from "../components/Topnav.vue";
+import Playtext from "../components/Playtext.vue";
 export default {
-  components: { Topnav },
+  components: { Topnav, Playtext },
 };
 </script>
 <style lang="less" scoped>
