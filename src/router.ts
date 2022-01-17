@@ -1,6 +1,8 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 import Home from './view/Home.vue';
-import Doc from './view/Docpage.vue';
+import Docpage from './view/Docpage.vue';
+import one from './lib/one.vue';
+import two from './lib/two.vue';
 
 const history = createWebHashHistory();
 const router = createRouter({
@@ -8,13 +10,12 @@ const router = createRouter({
   routes: [
     { path: '/', component: Home },
     {
-      path: '/doc', component: Doc,
-      // redirect: '/doc/doctwo',
-      // children: [
-      //   { path: 'doctwo', component: Doctwo },
-      //   { path: 'doctwo2', component: Doctwo2 },
-      //   { path: 'doctwo3', component: Doctwo3 }
-      // ]
+      path: '/doc', component: Docpage,
+      redirect: '/doc/one',
+      children: [
+        { path: 'one', component: one },
+        { path: 'two', component: two },
+      ]
     }
   ]
 })

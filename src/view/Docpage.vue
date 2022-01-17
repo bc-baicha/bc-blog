@@ -1,6 +1,7 @@
 <template>
+  <Topnav :showColor="true" />
   <div class="layout">
-    <Topnav :showColor="true" />
+    <Menu />
     <main>
       <router-view />
     </main>
@@ -8,15 +9,16 @@
 </template>
 <script lang="ts">
 import Topnav from "../components/Topnav.vue";
+import Menu from "../components/Menu.vue";
 export default {
   components: {
     Topnav,
+    Menu,
   },
 };
 </script>
 <style lang="less" scoped>
 .layout {
-  // display: flex;
-  // flex-direction: column;
+  display: flex;
 }
 </style>

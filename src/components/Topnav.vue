@@ -14,7 +14,7 @@
   </div>
 </template>
 <script lang="ts">
-import { router } from "../router";
+import { useRouter } from "vue-router";
 export default {
   props: {
     showColor: {
@@ -23,6 +23,7 @@ export default {
     },
   },
   setup() {
+    const router = useRouter();
     const onRouterHome = () => {
       router.push("/");
     };
