@@ -5,7 +5,7 @@
       <img class="bc-home-img" src="../assets/home.gif" alt="" />
       <Playtext text="今天也是元气满满的一天~~" :width="370" />
       <div class="text"><a>简单的记录点东西</a></div>
-      <div class="btn-grad">Get Started -></div>
+      <router-link to="/doc" class="btn-grad">Get Started -></router-link>
     </main>
   </div>
 </template>
@@ -94,6 +94,7 @@ export default {
       box-shadow: 0 0 20px #eee;
       border-radius: 10px;
       display: block;
+      text-decoration: none;
     }
 
     .btn-grad:hover {
