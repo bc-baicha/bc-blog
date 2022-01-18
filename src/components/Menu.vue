@@ -56,8 +56,8 @@ export default {
     background: white;
   }
   &::-webkit-scrollbar-corner, /* 滚动条角落 */
-&::-webkit-scrollbar-thumb,
-&::-webkit-scrollbar-track {
+  &::-webkit-scrollbar-thumb,
+  &::-webkit-scrollbar-track {
     border-radius: 2px;
   }
   &::-webkit-scrollbar-corner,

@@ -1,6 +1,14 @@
 <template>
   <aside v-if="list?.name" class="dir-aside">
-    <h3 @click="onShowList">{{ list.name }}</h3>
+    <h3 @click="onShowList">
+      {{ list.name }}
+      <svg
+        class="dir-point"
+        :style="show ? { transform: 'rotate(90deg)' } : ''"
+      >
+        <use xlink:href="#icon-xiajiantou" />
+      </svg>
+    </h3>
     <div :class="show ? 'show-dir-wrap' : 'hid-dir-wrap'" ref="heightContent">
       <div v-for="(item, i) in list.data" :key="i">
         <router-link :to="item.path">{{ item.name }}</router-link>
@@ -41,9 +49,17 @@ export default {
 .dir-aside {
   width: 250px;
   h3 {
+    display: flex;
+    align-items: center;
     margin: 10px 0px;
     padding-left: 20px;
     cursor: pointer;
+    .dir-point {
+      width: 15px;
+      height: 15px;
+      margin-left: 5px;
+      transition: all 0.25s;
+    }
   }
   .show-dir-wrap {
     width: 100%;
