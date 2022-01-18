@@ -3,6 +3,7 @@ import Home from './view/Home.vue';
 import Docpage from './view/Docpage.vue';
 import one from './lib/one.vue';
 import two from './lib/two.vue';
+import three from './lib/three.vue';
 
 const history = createWebHashHistory();
 const router = createRouter({
@@ -15,6 +16,7 @@ const router = createRouter({
       children: [
         { path: 'one', component: one },
         { path: 'two', component: two },
+        { path: 'three', component: three },
       ]
     }
   ]
