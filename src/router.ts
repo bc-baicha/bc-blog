@@ -1,11 +1,10 @@
-import { createRouter, createWebHashHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
 import Home from './view/Home.vue';
 import Docpage from './view/Docpage.vue';
 import one from './lib/one.vue';
 import two from './lib/two.vue';
 import three from './lib/three.vue';
-
-const history = createWebHashHistory();
+const history = createWebHistory();
 const router = createRouter({
   history: history,
   routes: [
