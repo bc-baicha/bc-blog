@@ -9,7 +9,9 @@
       <a target="_blank" href="https://bc-baicha.github.io/baicha-ui-website/#/"
         >BC-UI</a
       >
-      <a target="_blank" href="https://github.com/bc-baicha/bc-blog">Github</a>
+      <a target="_blank" href="https://github.com/bc-baicha/bc-blog/tree/dev"
+        >Github</a
+      >
     </div>
   </div>
 </template>
