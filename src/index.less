@@ -8,6 +8,7 @@ body {
 }
 &::-webkit-scrollbar {
   width: 2px;
+  height: 2px;
   background: white;
 }
 &::-webkit-scrollbar-corner, /* 滚动条角落 */
@@ -24,4 +25,13 @@ body {
 &::-webkit-scrollbar-thumb {
   /* 滚动条手柄 */
   background-color: #00adb5;
+}
+
+pre {
+  width: 60vw;
+  margin: 0;
+  > code {
+    border-radius: 8px;
+    font-size: 15px;
+  }
 }

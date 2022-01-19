@@ -47,7 +47,9 @@ export default {
 </script>
 <style lang="less" scoped>
 .dir-aside {
-  width: 250px;
+  width: 14vw;
+  min-width: 200px;
+  overflow-x: auto;
   h3 {
     display: flex;
     align-items: center;

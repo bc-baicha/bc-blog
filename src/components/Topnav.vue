@@ -5,7 +5,7 @@
         <use xlink:href="#icon-home"></use>
       </svg>
     </div>
-    <div>
+    <div class="right">
       <a target="_blank" href="https://bc-baicha.github.io/baicha-ui-website/#/"
         >BC-UI</a
       >
@@ -42,6 +42,11 @@ export default {
   padding: 0 100px;
   box-shadow: 0 5px 5px rgba(#333, 0.1);
   z-index: 10;
+  @media (max-width: 550px) {
+    .right {
+      display: none;
+    }
+  }
   &.bcColor {
     background-color: #d9afd9;
     background-image: linear-gradient(90deg, #d9afd9 0%, #97d9e1 100%);

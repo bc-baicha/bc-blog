@@ -1,5 +1,20 @@
 <template>
-  <div>这是</div>
+  <Heightcode>
+    <pre>
+      <code>
+function f(x) {
+    let x = 100; 
+    // Uncaught SyntaxError: Identifier 'x' has already been declared
+  }
+
+function g() {
+    let x = 100;
+    var x = 100; 
+    // Uncaught SyntaxError: Identifier 'x' has already been declared
+}
+      </code>
+    </pre>
+  </Heightcode>
 </template>
 <script lang="ts">
 export default {
@@ -8,3 +23,4 @@ export default {
   },
 };
 </script>
+<style lang="less" scoped></style>

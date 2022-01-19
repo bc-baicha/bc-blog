@@ -1,8 +1,8 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import Home from './view/Home.vue';
 import Docpage from './view/Docpage.vue';
 import letConst from './lib/JS/letConst.vue';
-const history = createWebHistory();
+const history = createWebHashHistory();
 const router = createRouter({
   history: history,
   routes: [
