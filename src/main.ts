@@ -4,6 +4,7 @@ import './index.less';
 import 'highlight.js/styles/monokai-sublime.css'
 import hljs from 'highlight.js'
 import Heightcode from './components/Heightcode.vue';
+import Pagetitle from './components/Pagetitle.vue';
 import { router } from './router';
 const app = createApp(App);
 app.directive('highlight', function (el) {
@@ -14,4 +15,5 @@ app.directive('highlight', function (el) {
 })
 app.use(router);
 app.mount('#app');
-app.component('Heightcode', Heightcode)
+app.component('Heightcode', Heightcode);
+app.component('Pagetitle', Pagetitle);

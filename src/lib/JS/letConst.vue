@@ -15,6 +15,7 @@ function g() {
       </code>
     </pre>
   </Heightcode>
+  <Pagetitle text="这是测试" />
 </template>
 <script lang="ts">
 export default {
