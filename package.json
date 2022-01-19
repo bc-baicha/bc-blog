@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^2.0.1",
+    "highlight.js": "^11.4.0",
     "less": "^4.1.2",
     "vue": "^3.2.26",
     "vue-router": "^4.0.12"

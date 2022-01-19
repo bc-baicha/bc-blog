@@ -1,8 +1,16 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import './index.less';
+import 'highlight.js/styles/monokai-sublime.css'
+import hljs from 'highlight.js'
 import { router } from './router';
 const app = createApp(App);
+app.directive('highlight', function (el) {
+  const blocks = el.querySelectorAll('pre code');
+  blocks.forEach((block: any) => {
+    hljs.highlightBlock(block)
+  })
+})
 app.use(router);
 app.mount('#app');
 
