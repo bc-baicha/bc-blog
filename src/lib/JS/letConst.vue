@@ -1,5 +1,5 @@
 <template>
-  <Heightcode>
+  <!-- <Heightcode>
     <pre>
       <code>
 function f(x) {
@@ -14,8 +14,11 @@ function g() {
 }
       </code>
     </pre>
-  </Heightcode>
-  <Pagetitle text="这是测试" />
+  </Heightcode> -->
+  <Pagetitle text="let 块级作用域和const" />
+  <Pagecontent>
+    <h4>为什么要使用块级作用域？</h4>
+  </Pagecontent>
 </template>
 <script lang="ts">
 export default {
