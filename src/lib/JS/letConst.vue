@@ -71,11 +71,11 @@ if (true) {
       如果初始化没有进行赋值，就会报错。
     </div>
     <h3>const 数据修改</h3>
-    <div>
+    <Tagtext>
       const声明的变量，不得改变，实际上是指，变量指向内存地址保存的数据不能更改，基本数据类型，存储在栈中，是一些简易的字段。<br />
       而引用数据类型，数据存储在堆内存中，声明的变量，只是一个指向堆内存空间的指针，<br />
       const只能保证指针不发生改变，但是堆内存中的数据结构和值是否发生改变，就不能完全控制了，因此，声明常量时要小心。
-    </div>
+    </Tagtext>
     <Heightcode>
       <pre>
         <code>
@@ -91,11 +91,3 @@ console.log(obj.num); //2
     </Heightcode>
   </Pagecontent>
 </template>
-<script lang="ts">
-export default {
-  setup() {
-    return {};
-  },
-};
-</script>
-<style lang="less" scoped></style>

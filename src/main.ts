@@ -6,6 +6,7 @@ import hljs from 'highlight.js'
 import Heightcode from './components/Heightcode.vue';
 import Pagetitle from './components/Pagetitle.vue';
 import Pagecontent from './components/Pagecontent.vue';
+import Tagtext from './components/Tagtext.vue';
 import { router } from './router';
 const app = createApp(App);
 app.directive('highlight', function (el) {
@@ -19,3 +20,4 @@ app.mount('#app');
 app.component('Heightcode', Heightcode);
 app.component('Pagetitle', Pagetitle);
 app.component('Pagecontent', Pagecontent);
+app.component('Tagtext', Tagtext);

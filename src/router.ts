@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 import Home from './view/Home.vue';
 import Docpage from './view/Docpage.vue';
 import letConst from './lib/JS/letConst.vue';
+import Parameter from './lib/JS/Parameter.vue';
 const history = createWebHashHistory();
 const router = createRouter({
   history: history,
@@ -12,6 +13,7 @@ const router = createRouter({
       redirect: '/doc/letConst',
       children: [
         { path: 'letConst', component: letConst },
+        { path: 'parameter', component: Parameter },
       ]
     }
   ]
