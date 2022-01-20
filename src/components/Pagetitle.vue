@@ -1,8 +1,5 @@
 <template>
-  <div class="page-title">
-    <!-- <span class="before">#</span> -->
-    {{ text }}
-  </div>
+  <div class="page-title">{{ text }}</div>
 </template>
 <script lang="ts">
 export default {
@@ -22,8 +19,8 @@ export default {
   width: 60vw;
   border-bottom: solid 1px #ddd;
   font-weight: bold;
-  font-size: 20px;
-  padding: 0px 0px 5px 15px;
+  font-size: 25px;
+  padding: 0px 0px 5px 20px;
   margin-top: 10px;
   &::before {
     content: "#";

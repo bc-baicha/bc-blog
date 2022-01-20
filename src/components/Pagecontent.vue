@@ -6,6 +6,6 @@
 <style lang="less" scoped>
 .page-content {
   width: 60vw;
-  padding-left: 15px;
+  padding-left: 20px;
 }
 </style>
