@@ -7,8 +7,12 @@ const showList = {
         path: "/doc/letConst",
       },
       {
-        name: "JavaScript 参数传递",
+        name: "参数传递",
         path: "/doc/parameter",
+      },
+      {
+        name: "类数组对象的定义",
+        path: "/doc/classArray",
       },
     ],
   },

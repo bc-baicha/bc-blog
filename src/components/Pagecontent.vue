@@ -7,5 +7,6 @@
 .page-content {
   width: 60vw;
   padding-left: 20px;
+  padding-bottom: 20px;
 }
 </style>
