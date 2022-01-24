@@ -1,7 +1,8 @@
 <template>
   <Pagetitle text="多重边框demo" />
-  <Heightcode>
-    <pre>
+  <Pagecontent>
+    <Heightcode>
+      <pre>
       <code>
 {{divs}}
 
@@ -43,12 +44,13 @@
 }
     </code>
   </pre>
-  </Heightcode>
-  <div class="multiple">
-    <div class="one"></div>
-    <div class="two"></div>
-    <div class="three"></div>
-  </div>
+    </Heightcode>
+    <div class="multiple">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+    </div>
+  </Pagecontent>
 </template>
 <script lang="ts" setup>
 const divs = `<div class="multiple">

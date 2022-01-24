@@ -4,7 +4,8 @@ import Docpage from './view/Docpage.vue';
 import letConst from './lib/JS/letConst.vue';
 import Parameter from './lib/JS/Parameter.vue';
 import ClassArray from './lib/JS/ClassArray.vue';
-import Multipleborders from './lib/CSS/Multipleborders.vue'
+import Multipleborders from './lib/CSS/Multipleborders.vue';
+import Stripesbackground from './lib/CSS/Stripesbackground.vue';
 const history = createWebHashHistory();
 const router = createRouter({
   history: history,
@@ -17,7 +18,8 @@ const router = createRouter({
         { path: 'letConst', component: letConst },
         { path: 'parameter', component: Parameter },
         { path: 'classArray', component: ClassArray },
-        { path: 'multipleborders', component: Multipleborders }
+        { path: 'multipleborders', component: Multipleborders },
+        { path: 'stripesbackground', component: Stripesbackground }
       ]
     }
   ]

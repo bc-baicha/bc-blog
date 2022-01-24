@@ -24,6 +24,10 @@ const showList = {
       {
         name: "多重边框",
         path: '/doc/multipleborders'
+      },
+      {
+        name: '条纹背景',
+        path: '/doc/stripesbackground'
       }
     ]
   }
