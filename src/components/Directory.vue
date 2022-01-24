@@ -11,7 +11,9 @@
     </h3>
     <div :class="show ? 'show-dir-wrap' : 'hid-dir-wrap'" ref="heightContent">
       <div v-for="(item, i) in list.data" :key="i">
-        <router-link :to="item.path">{{ item.name }}</router-link>
+        <router-link @click="localStorageSet" :to="item.path">{{
+          item.name
+        }}</router-link>
       </div>
     </div>
   </aside>
@@ -27,8 +29,12 @@ export default {
   },
   setup(props) {
     const { list } = props;
-    const show = ref(false);
+    const showKey = localStorage.getItem("showKey");
+    const show = ref(showKey === list.key);
     const heightContent = ref<HTMLDivElement>(null);
+    const localStorageSet = () => {
+      localStorage.setItem("showKey", list.key);
+    };
     const onShowList = () => {
       show.value = !show.value;
       if (show.value) {
@@ -41,6 +47,7 @@ export default {
       show,
       onShowList,
       heightContent,
+      localStorageSet,
     };
   },
 };

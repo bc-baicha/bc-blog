@@ -1,6 +1,7 @@
 const showList = {
   javascript: {
     name: "JavaScript",
+    key: 'JavaScript',
     data: [
       {
         name: "let 块级作用域和const",
@@ -18,6 +19,7 @@ const showList = {
   },
   css: {
     name: 'CSS',
+    key: 'CSS',
     data: [
       {
         name: "多重边框",
