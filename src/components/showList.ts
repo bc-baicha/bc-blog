@@ -28,6 +28,10 @@ const showList = {
       {
         name: '条纹背景',
         path: '/doc/stripesbackground'
+      },
+      {
+        name: '圆与半圆',
+        path: '/doc/ellipse'
       }
     ]
   }
