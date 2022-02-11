@@ -32,6 +32,10 @@ const showList = {
       {
         name: '圆与半圆',
         path: '/doc/ellipse'
+      },
+      {
+        name: '提示气泡',
+        path: '/doc/poptip'
       }
     ]
   }

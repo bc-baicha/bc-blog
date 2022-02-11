@@ -7,6 +7,7 @@ import ClassArray from './lib/JS/ClassArray.vue';
 import Multipleborders from './lib/CSS/Multipleborders.vue';
 import Stripesbackground from './lib/CSS/Stripesbackground.vue';
 import Ellipse from './lib/CSS/Ellipse.vue';
+import Poptip from './lib/CSS/Poptip.vue';
 const history = createWebHashHistory();
 const router = createRouter({
   history: history,
@@ -21,7 +22,8 @@ const router = createRouter({
         { path: 'classArray', component: ClassArray },
         { path: 'multipleborders', component: Multipleborders },
         { path: 'stripesbackground', component: Stripesbackground },
-        { path: 'ellipse', component: Ellipse }
+        { path: 'ellipse', component: Ellipse },
+        { path: 'poptip', component: Poptip }
       ]
     }
   ]
