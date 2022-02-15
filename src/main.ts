@@ -3,6 +3,8 @@ import App from './App.vue'
 import './index.less';
 import 'highlight.js/styles/monokai-sublime.css'
 import hljs from 'highlight.js'
+import 'viewerjs/dist/viewer.css'
+import Viewer from 'v-viewer';
 import Heightcode from './components/Heightcode.vue';
 import Pagetitle from './components/Pagetitle.vue';
 import Pagecontent from './components/Pagecontent.vue';
@@ -14,8 +16,9 @@ app.directive('highlight', function (el) {
   blocks.forEach((block: any) => {
     hljs.highlightBlock(block)
   })
-})
+});
 app.use(router);
+app.use(Viewer);
 app.mount('#app');
 app.component('Heightcode', Heightcode);
 app.component('Pagetitle', Pagetitle);

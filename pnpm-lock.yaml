@@ -5,6 +5,8 @@ specifiers:
   '@vue/compiler-sfc': ^3.0.4
   highlight.js: ^11.4.0
   less: ^4.1.2
+  v-viewer: ^3.0.10
+  viewerjs: ^1.10.4
   vite: ^2.7.12
   vue: ^3.2.26
   vue-router: ^4.0.12
@@ -13,6 +15,8 @@ dependencies:
   '@vitejs/plugin-vue': 2.0.1_vite@2.7.12+vue@3.2.26
   highlight.js: 11.4.0
   less: 4.1.2
+  v-viewer: 3.0.10_vue@3.2.26
+  viewerjs: 1.10.4
   vue: 3.2.26
   vue-router: 4.0.12_vue@3.2.26
 
@@ -382,6 +386,10 @@ packages:
       source-map: 0.6.1
     dev: false
 
+  /lodash/4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+    dev: false
+
   /magic-string/0.25.7:
     resolution: {integrity: sha512-4CrMT5DOHTDk4HYDlzmwu4FVCcIYI8gauveasrdCu2IKIFOJ3f0v/8MDGJCDL9oD2ppz/Av1b0Nj345H9M+XIA==}
     dependencies:
@@ -509,6 +517,20 @@ packages:
 
   /tslib/2.3.1:
     resolution: {integrity: sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==}
+    dev: false
+
+  /v-viewer/3.0.10_vue@3.2.26:
+    resolution: {integrity: sha512-ZT5sYYS+Cy4z2TP/PuhqPyiK4NonaZzhkDPfiY9bwa5EjGyusO8R7/k/4c1ptvTzx2nBSV9MvQHl2X3XzhANqw==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      lodash: 4.17.21
+      viewerjs: 1.10.4
+      vue: 3.2.26
+    dev: false
+
+  /viewerjs/1.10.4:
+    resolution: {integrity: sha512-CjMt64yC9D+XUx2t3F0TPbh/Yt5+/ke8/s3IizXa6NtksdJUFDoCcNxi/KRZ9eiZPR/D77pHnnQzAtCoLDaGIw==}
     dev: false
 
   /vite/2.7.12_less@4.1.2:

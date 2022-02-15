@@ -6,6 +6,7 @@ import letConst from './lib/JS/letConst.vue';
 import Parameter from './lib/JS/Parameter.vue';
 import ClassArray from './lib/JS/ClassArray.vue';
 import Closure from './lib/JS/Closure.vue';
+import Prototype from './lib/JS/Prototype.vue';
 /** 这是CSS模块*/
 import Multipleborders from './lib/CSS/Multipleborders.vue';
 import Stripesbackground from './lib/CSS/Stripesbackground.vue';
@@ -26,6 +27,7 @@ const router = createRouter({
         { path: 'parameter', component: Parameter },
         { path: 'classArray', component: ClassArray },
         { path: 'closure', component: Closure },
+        { path: 'prototype', component: Prototype },
         // 这是CSS模块
         { path: 'multipleborders', component: Multipleborders },
         { path: 'stripesbackground', component: Stripesbackground },

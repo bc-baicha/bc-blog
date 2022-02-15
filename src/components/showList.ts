@@ -19,6 +19,10 @@ const showList = {
         name: "JS 闭包阐释",
         path: "/doc/closure",
       },
+      {
+        name: "JS原型和原型链",
+        path: "/doc/prototype",
+      },
     ],
   },
   css: {
