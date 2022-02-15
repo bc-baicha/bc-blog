@@ -15,6 +15,10 @@ const showList = {
         name: "类数组对象的定义",
         path: "/doc/classArray",
       },
+      {
+        name: "JS 闭包",
+        path: "/doc/closure",
+      },
     ],
   },
   css: {
