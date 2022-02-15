@@ -16,7 +16,7 @@ const showList = {
         path: "/doc/classArray",
       },
       {
-        name: "JS 闭包",
+        name: "JS 闭包阐释",
         path: "/doc/closure",
       },
     ],
