@@ -7,6 +7,7 @@ import Parameter from './lib/JS/Parameter.vue';
 import ClassArray from './lib/JS/ClassArray.vue';
 import Closure from './lib/JS/Closure.vue';
 import Prototype from './lib/JS/Prototype.vue';
+import Packagetool from './lib/JS/Packagetool.vue';
 /** 这是CSS模块*/
 import Multipleborders from './lib/CSS/Multipleborders.vue';
 import Stripesbackground from './lib/CSS/Stripesbackground.vue';
@@ -28,6 +29,7 @@ const router = createRouter({
         { path: 'classArray', component: ClassArray },
         { path: 'closure', component: Closure },
         { path: 'prototype', component: Prototype },
+        { path: 'packagetool', component: Packagetool },
         // 这是CSS模块
         { path: 'multipleborders', component: Multipleborders },
         { path: 'stripesbackground', component: Stripesbackground },

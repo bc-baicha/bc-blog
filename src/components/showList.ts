@@ -23,6 +23,10 @@ const showList = {
         name: "JS原型和原型链",
         path: "/doc/prototype",
       },
+      {
+        name: "npm Yarn cnpm总结",
+        path: "/doc/packagetool",
+      },
     ],
   },
   css: {
