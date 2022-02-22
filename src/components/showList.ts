@@ -27,6 +27,10 @@ const showList = {
         name: "npm Yarn cnpm总结",
         path: "/doc/packagetool",
       },
+      {
+        name: 'New 的作用',
+        path: '/doc/newintroduce'
+      }
     ],
   },
   css: {
