@@ -54,6 +54,32 @@ const showList = {
         path: '/doc/poptip'
       }
     ]
+  },
+  react: {
+    name: 'React',
+    key: 'React',
+    data: [
+      {
+        name: "Hooks",
+        path: '/doc/react/introduce',
+        children: [
+          {
+            name: 'hooks使命',
+            path: '/doc/react/introduce',
+          },
+        ]
+      },
+      // {
+      //   name: "react-redux",
+      //   path: '/doc/react/redux',
+      //   children: [
+      //     {
+      //       name: 'redux',
+      //       path: '/doc/react/redux',
+      //     },
+      //   ]
+      // },
+    ]
   }
 }
 

@@ -2,6 +2,7 @@
   <div class="menu_wrap">
     <Directory :list="showList.javascript" />
     <Directory :list="showList.css" />
+    <Directory :list="showList.react" />
   </div>
 </template>
 <script lang="ts">

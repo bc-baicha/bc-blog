@@ -11,7 +11,10 @@
     </h3>
     <div :class="show ? 'show-dir-wrap' : 'hid-dir-wrap'" ref="heightContent">
       <div v-for="(item, i) in list.data" :key="i">
-        <router-link @click="localStorageSet" :to="item.path">{{
+        <div v-if="item?.children">
+          <Childrenitem :item="item" :onChange="localStorageSet" />
+        </div>
+        <router-link v-else @click="localStorageSet" :to="item.path">{{
           item.name
         }}</router-link>
       </div>
@@ -20,12 +23,16 @@
 </template>
 <script lang="ts">
 import { ref } from "vue";
+import Childrenitem from "./Secornddir.vue";
 export default {
   props: {
     list: {
       type: Object,
       default: {},
     },
+  },
+  components: {
+    Childrenitem,
   },
   setup(props) {
     const { list } = props;
@@ -38,7 +45,15 @@ export default {
     const onShowList = () => {
       show.value = !show.value;
       if (show.value) {
-        heightContent.value.style.height = list.data.length * 58 + "px";
+        let num = list.data.length;
+        let childrenNum = 0;
+        if (list.data?.[0]?.children) {
+          list.data.forEach((item) => {
+            childrenNum += item.children.length;
+          });
+          num = list.data.length + childrenNum;
+        }
+        heightContent.value.style.height = num * 58 + "px";
       } else {
         heightContent.value.style.height = 0 + "px";
       }
@@ -63,12 +78,12 @@ export default {
     margin: 10px 0px;
     padding-left: 20px;
     cursor: pointer;
-    .dir-point {
-      width: 15px;
-      height: 15px;
-      margin-left: 5px;
-      transition: all 0.25s;
-    }
+  }
+  .dir-point {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    transition: all 0.25s;
   }
   .show-dir-wrap {
     width: 100%;

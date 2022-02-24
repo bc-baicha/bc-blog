@@ -14,6 +14,10 @@ import Multipleborders from './lib/CSS/Multipleborders.vue';
 import Stripesbackground from './lib/CSS/Stripesbackground.vue';
 import Ellipse from './lib/CSS/Ellipse.vue';
 import Poptip from './lib/CSS/Poptip.vue';
+/**这是React模块 */
+import React from './lib/React/index.vue';
+import Introduce from './lib/React/React-hooks/introduce.vue';
+import Reactredux from './lib/React/React-redux/index.vue';
 
 const history = createWebHashHistory();
 const router = createRouter({
@@ -36,7 +40,15 @@ const router = createRouter({
         { path: 'multipleborders', component: Multipleborders },
         { path: 'stripesbackground', component: Stripesbackground },
         { path: 'ellipse', component: Ellipse },
-        { path: 'poptip', component: Poptip }
+        { path: 'poptip', component: Poptip },
+        {
+          path: 'react', component: React,
+          redirect: '/doc/react/introduce',
+          children: [
+            { path: 'introduce', component: Introduce },
+            { path: 'redux', component: Reactredux }
+          ]
+        }
       ]
     }
   ]
