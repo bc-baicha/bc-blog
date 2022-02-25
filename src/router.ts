@@ -18,6 +18,7 @@ import Poptip from './lib/CSS/Poptip.vue';
 import React from './lib/React/index.vue';
 import Introduce from './lib/React/React-hooks/introduce.vue';
 import Reactredux from './lib/React/React-redux/index.vue';
+import Eventprocess from './lib/React/Event/Eventprocess.vue';
 
 const history = createWebHashHistory();
 const router = createRouter({
@@ -46,7 +47,8 @@ const router = createRouter({
           redirect: '/doc/react/introduce',
           children: [
             { path: 'introduce', component: Introduce },
-            { path: 'redux', component: Reactredux }
+            { path: 'redux', component: Reactredux },
+            { path: 'eventprocess', component: Eventprocess }
           ]
         }
       ]

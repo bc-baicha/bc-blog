@@ -69,6 +69,16 @@ const showList = {
           },
         ]
       },
+      {
+        name: 'React事件',
+        path: '/doc/react/eventprocess',
+        children: [
+          {
+            name: '事件处理',
+            path: '/doc/react/eventprocess',
+          },
+        ]
+      }
       // {
       //   name: "react-redux",
       //   path: '/doc/react/redux',
