@@ -82,6 +82,10 @@ const showList = {
             path: '/doc/react/syntheticevent'
           }
         ]
+      },
+      {
+        name: 'React 生命周期',
+        path: '/doc/react/Lifecycle'
       }
       // {
       //   name: "react-redux",

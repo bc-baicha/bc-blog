@@ -87,11 +87,7 @@ class ListItem extends Component {
     <h4>react事件机制</h4>
     <p>DOM事件</p>
     <div v-viewer>
-      <img
-        :style="{ width: '600px' }"
-        src="../../../assets/React/1.png"
-        alt="error"
-      />
+      <img src="../../../assets/React/1.png" alt="error" />
     </div>
     <p>
       在js的事件触发经过3个阶段，事件的捕获->目标对象事件的处理->事件冒泡，<br />
@@ -101,11 +97,7 @@ class ListItem extends Component {
     </p>
     <h4>react事件</h4>
     <div v-viewer>
-      <img
-        :style="{ width: '600px' }"
-        src="../../../assets/React/2.png"
-        alt="error"
-      />
+      <img src="../../../assets/React/2.png" alt="error" />
     </div>
     <p>
       react会将所有的事件都绑定到document上，而不是某个元素上面，统一的使用事件监听，<br />
