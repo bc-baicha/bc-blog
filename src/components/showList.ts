@@ -77,6 +77,10 @@ const showList = {
             name: '事件处理',
             path: '/doc/react/eventprocess',
           },
+          {
+            name: '自述合成事件',
+            path: '/doc/react/syntheticevent'
+          }
         ]
       }
       // {

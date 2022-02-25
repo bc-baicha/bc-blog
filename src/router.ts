@@ -19,6 +19,7 @@ import React from './lib/React/index.vue';
 import Introduce from './lib/React/React-hooks/introduce.vue';
 import Reactredux from './lib/React/React-redux/index.vue';
 import Eventprocess from './lib/React/Event/Eventprocess.vue';
+import Syntheticevent from './lib/React/Event/Syntheticevent.vue'
 
 const history = createWebHashHistory();
 const router = createRouter({
@@ -48,7 +49,8 @@ const router = createRouter({
           children: [
             { path: 'introduce', component: Introduce },
             { path: 'redux', component: Reactredux },
-            { path: 'eventprocess', component: Eventprocess }
+            { path: 'eventprocess', component: Eventprocess },
+            { path: 'syntheticevent', component: Syntheticevent }
           ]
         }
       ]
