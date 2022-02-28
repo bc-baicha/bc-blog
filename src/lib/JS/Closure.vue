@@ -167,5 +167,68 @@ myContent = {
       闭包会使得函数中的变量都被保存在内存中，内存消耗很大，所以不能滥用闭包，否则会造成网页的性能问题，导致内存泄露，<br />
       解决方法：在退出函数之前，将不使用的局部变量全部删除。
     </Tagtext>
+    <h3>再次学习闭包：</h3>
+    <Tagtext>
+      闭包的定义：函数和函数内部能访问到的变量的总和，就是一个闭包。
+    </Tagtext>
+    <h4>闭包的目的：隐藏变量</h4>
+    <Heightcode>
+      <pre>
+        <code>
+function foo(){
+  var local = 1
+  function bar(){
+    local++
+    return local
+  }
+  return bar
+}
+
+var func = foo()
+func()
+        </code>
+      </pre>
+    </Heightcode>
+    <h4>为什么要函数套函数？</h4>
+    <div>
+      是因为需要局部变量，所以把local放在了函数内部，如果不放在函数的内部，那么local就是全局变量了，就到不到我们想要的效果了。
+    </div>
+    <h4>为什么要return bar ?</h4>
+    <div>
+      因为如果不return，我们就无法访问到这个函数了，这里我们把return
+      改为window.bar =
+      bar也可以的，只要能保证我们在外部可以访问到这个函数就可以。
+    </div>
+    <h4>什么是隐藏变量？为什么要隐藏变量？</h4>
+    下面我们写一个简单的游戏场景，控制游戏角色的等级。
+    <Tagtext>
+      window.level = 10; //等级为10级 <br />
+      这个等级的变量我们设置为全局变量，那么我们在外部都可以修改这个值，这样显然是不合理的，<br />
+      我们不能让人能够直接访问到这个变量。
+    </Tagtext>
+    <h4>此时我们就可以使用闭包：</h4>
+    <Heightcode>
+      <pre>
+        <code>
+!function(){
+
+  let level = 10
+
+  window.升级 = function(){
+    level += 1
+  }
+
+  window.降级 = function(){
+    level -= 1
+  }
+
+}()
+        </code>
+      </pre>
+    </Heightcode>
+    <div>我们把等级level字段设置为局部变量，然后暴露出访问函数，</div>
+    <div>
+      这样外部就不能够直接访问等级变量，我们想要升级或者降级可以通过暴露的函数来进行操作，就达到了隐藏变量的目的。
+    </div>
   </Pagecontent>
 </template>
