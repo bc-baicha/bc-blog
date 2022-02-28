@@ -2,7 +2,7 @@
   <Topnav :showColor="true" />
   <div class="layout">
     <Menu />
-    <main>
+    <main id="main-content">
       <router-view />
     </main>
   </div>

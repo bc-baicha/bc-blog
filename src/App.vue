@@ -12,6 +12,7 @@ export default {
     const menuVisible = ref(show);
     provide("width", menuVisible);
     router.afterEach(() => {
+      document.getElementById("main-content").scrollTo(0, 0);
       if (width <= 550) {
         menuVisible.value = false;
       }
