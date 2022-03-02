@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
 import Home from './view/Home.vue';
 import Docpage from './view/Docpage.vue';
 /**这是js模块 */
@@ -14,6 +14,7 @@ import Multipleborders from './lib/CSS/Multipleborders.vue';
 import Stripesbackground from './lib/CSS/Stripesbackground.vue';
 import Ellipse from './lib/CSS/Ellipse.vue';
 import Poptip from './lib/CSS/Poptip.vue';
+import Interview from './lib/CSS/Interview.vue';
 /**这是React模块 */
 import React from './lib/React/index.vue';
 import Introduce from './lib/React/React-hooks/introduce.vue';
@@ -22,7 +23,7 @@ import Eventprocess from './lib/React/Event/Eventprocess.vue';
 import Syntheticevent from './lib/React/Event/Syntheticevent.vue';
 import Lifecycle from './lib/React/Lifecycle.vue'
 
-const history = createWebHashHistory();
+const history = createWebHistory();
 const router = createRouter({
   history: history,
   routes: [
@@ -44,6 +45,7 @@ const router = createRouter({
         { path: 'stripesbackground', component: Stripesbackground },
         { path: 'ellipse', component: Ellipse },
         { path: 'poptip', component: Poptip },
+        { path: 'interview', component: Interview },
         {
           path: 'react', component: React,
           redirect: '/doc/react/introduce',

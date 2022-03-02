@@ -52,6 +52,10 @@ const showList = {
       {
         name: '提示气泡',
         path: '/doc/poptip'
+      },
+      {
+        name: 'CSS 经典题',
+        path: '/doc/interview'
       }
     ]
   },
