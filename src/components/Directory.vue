@@ -49,7 +49,8 @@ export default {
         let childrenNum = 0;
         if (list.data?.[0]?.children) {
           list.data.forEach((item) => {
-            childrenNum += item.children.length;
+            let eleitemNum = item?.children ? item.children.length : 1;
+            childrenNum = childrenNum + eleitemNum;
           });
           num = list.data.length + childrenNum;
         }
