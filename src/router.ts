@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import Home from './view/Home.vue';
 import Docpage from './view/Docpage.vue';
 /**这是js模块 */
@@ -23,7 +23,7 @@ import Eventprocess from './lib/React/Event/Eventprocess.vue';
 import Syntheticevent from './lib/React/Event/Syntheticevent.vue';
 import Lifecycle from './lib/React/Lifecycle.vue'
 
-const history = createWebHistory();
+const history = createWebHashHistory();
 const router = createRouter({
   history: history,
   routes: [
