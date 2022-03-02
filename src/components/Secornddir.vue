@@ -66,6 +66,7 @@ export default {
   height: 30px;
   padding-left: 30px;
   font-weight: bold;
+  cursor: pointer;
 }
 .dir-point {
   width: 15px;
