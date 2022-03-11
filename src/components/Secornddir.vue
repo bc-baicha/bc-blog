@@ -13,7 +13,7 @@
     ref="childrenHeight"
   >
     <div v-for="(item, i) in item?.children" :key="i" class="dir_wrap">
-      <router-link @click="changePath" :to="item.path">{{
+      <router-link @click="changePath" :to="`/doc${item.path}`">{{
         item.name
       }}</router-link>
     </div>

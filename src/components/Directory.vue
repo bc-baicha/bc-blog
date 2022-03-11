@@ -14,7 +14,7 @@
         <div v-if="item?.children">
           <Childrenitem :item="item" :onChange="localStorageSet" />
         </div>
-        <router-link v-else @click="localStorageSet" :to="item.path">{{
+        <router-link v-else @click="localStorageSet" :to="`/doc${item.path}`">{{
           item.name
         }}</router-link>
       </div>

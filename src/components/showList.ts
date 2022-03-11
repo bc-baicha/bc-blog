@@ -5,35 +5,39 @@ const showList = {
     data: [
       {
         name: "let 块级作用域和const",
-        path: "/doc/letConst",
+        path: "/letConst",
       },
       {
         name: "参数传递",
-        path: "/doc/parameter",
+        path: "/parameter",
       },
       {
         name: "类数组对象的定义",
-        path: "/doc/classArray",
+        path: "/classArray",
       },
       {
         name: "JS 闭包阐释",
-        path: "/doc/closure",
+        path: "/closure",
       },
       {
         name: "JS原型和原型链",
-        path: "/doc/prototype",
+        path: "/prototype",
       },
       {
         name: "npm Yarn cnpm总结",
-        path: "/doc/packagetool",
+        path: "/packagetool",
       },
       {
         name: 'New 的作用',
-        path: '/doc/newintroduce'
+        path: '/newintroduce'
       },
       {
         name: '函数声明 / 表达式',
-        path: '/doc/fcexporess'
+        path: '/fcexpress'
+      },
+      {
+        name: '堆和栈',
+        path: '/stackHeap'
       }
     ],
   },
@@ -43,23 +47,23 @@ const showList = {
     data: [
       {
         name: "多重边框",
-        path: '/doc/multipleborders'
+        path: '/multipleborders'
       },
       {
         name: '条纹背景',
-        path: '/doc/stripesbackground'
+        path: '/stripesbackground'
       },
       {
         name: '圆与半圆',
-        path: '/doc/ellipse'
+        path: '/ellipse'
       },
       {
         name: '提示气泡',
-        path: '/doc/poptip'
+        path: '/poptip'
       },
       {
         name: 'CSS 经典题',
-        path: '/doc/interview'
+        path: '/interview'
       }
     ]
   },
@@ -69,39 +73,39 @@ const showList = {
     data: [
       {
         name: "Hooks",
-        path: '/doc/react/introduce',
+        path: '/react/introduce',
         children: [
           {
             name: 'hooks使命',
-            path: '/doc/react/introduce',
+            path: '/react/introduce',
           },
         ]
       },
       {
         name: 'React事件',
-        path: '/doc/react/eventprocess',
+        path: '/react/eventprocess',
         children: [
           {
             name: '事件处理',
-            path: '/doc/react/eventprocess',
+            path: '/react/eventprocess',
           },
           {
             name: '自述合成事件',
-            path: '/doc/react/syntheticevent'
+            path: '/react/syntheticevent'
           }
         ]
       },
       {
         name: 'React 生命周期',
-        path: '/doc/react/Lifecycle'
+        path: '/react/Lifecycle'
       }
       // {
       //   name: "react-redux",
-      //   path: '/doc/react/redux',
+      //   path: '/react/redux',
       //   children: [
       //     {
       //       name: 'redux',
-      //       path: '/doc/react/redux',
+      //       path: '/react/redux',
       //     },
       //   ]
       // },
