@@ -30,6 +30,10 @@ const showList = {
       {
         name: 'New 的作用',
         path: '/doc/newintroduce'
+      },
+      {
+        name: '函数声明 / 表达式',
+        path: '/doc/fcexporess'
       }
     ],
   },

@@ -9,6 +9,7 @@ import Closure from './lib/JS/Closure.vue';
 import Prototype from './lib/JS/Prototype.vue';
 import Packagetool from './lib/JS/Packagetool.vue';
 import Newintroduce from './lib/JS/Newintroduce.vue';
+import FCexporess from './lib/JS/FCexpress.vue';
 /** 这是CSS模块*/
 import Multipleborders from './lib/CSS/Multipleborders.vue';
 import Stripesbackground from './lib/CSS/Stripesbackground.vue';
@@ -40,6 +41,7 @@ const router = createRouter({
         { path: 'prototype', component: Prototype },
         { path: 'packagetool', component: Packagetool },
         { path: 'newintroduce', component: Newintroduce },
+        { path: 'fcexporess', component: FCexporess },
         // 这是CSS模块
         { path: 'multipleborders', component: Multipleborders },
         { path: 'stripesbackground', component: Stripesbackground },
