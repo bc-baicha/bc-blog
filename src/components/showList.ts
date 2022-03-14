@@ -38,6 +38,10 @@ const showList = {
       {
         name: '堆和栈',
         path: '/stackHeap'
+      },
+      {
+        name: 'JS 模块加载',
+        path: '/moduleLoaded'
       }
     ],
   },

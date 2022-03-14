@@ -23,6 +23,7 @@ const router = createRouter({
         { path: 'newintroduce', component: pathFC('JS/Newintroduce') },
         { path: 'fcexpress', component: pathFC('JS/FCexpress') },
         { path: 'stackHeap', component: pathFC('JS/Stackheap') },
+        { path: 'moduleLoaded', component: pathFC('JS/Moduleloaded') },
         // 这是CSS模块
         { path: 'multipleborders', component: pathFC('CSS/Multipleborders') },
         { path: 'stripesbackground', component: pathFC('CSS/Stripesbackground') },
