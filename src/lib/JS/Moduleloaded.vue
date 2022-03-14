@@ -263,12 +263,10 @@ export default const a = 1;
     <p>赋给default变量这句话让我们举例子解释下，更清楚一点：</p>
     <Tagtext>
       function demo(){return 'demo'};<br />
-      export default demo;
+      export default demo; <br /><br />
+      1、首先声明了一个函数demo，紧接着使用了export default命令<br />
+      2、这里并不是把demo函数输出了，而是进行了赋值，default = demo；
     </Tagtext>
-    <ul>
-      <li>1、首先声明了一个函数demo，紧接着使用了export default命令</li>
-      <li>2、这里并不是把demo函数输出了，而是进行了赋值，default = demo；</li>
-    </ul>
     <h3>下面是export default 命令的几个注意的地方：</h3>
     <Tagtext>
       export
