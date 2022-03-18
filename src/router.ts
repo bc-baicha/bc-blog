@@ -30,6 +30,7 @@ const router = createRouter({
         { path: 'ellipse', component: pathFC('CSS/Ellipse') },
         { path: 'poptip', component: pathFC('CSS/Poptip') },
         { path: 'interview', component: pathFC('CSS/Interview') },
+        { path: 'gridstudy', component: pathFC('CSS/Gridstudy') },
         {
           path: 'react', component: import('./lib/React/index.vue'),
           redirect: '/doc/react/introduce',

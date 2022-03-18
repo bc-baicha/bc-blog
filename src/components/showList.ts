@@ -68,6 +68,10 @@ const showList = {
       {
         name: 'CSS 经典题',
         path: '/interview'
+      },
+      {
+        name: 'Grid 学习',
+        path: '/gridstudy'
       }
     ]
   },
