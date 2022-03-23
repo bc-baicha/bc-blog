@@ -1,5 +1,5 @@
 <template>
-  <Pagetitle text="JS 原型和原型链" />
+  <Pagetitle text="JS原型和原型链" />
   <Pagecontent>
     <h4>JS 创建对象：</h4>
     <Tagtext>

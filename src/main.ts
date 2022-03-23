@@ -10,6 +10,7 @@ import Pagetitle from './components/Pagetitle.vue';
 import Pagecontent from './components/Pagecontent.vue';
 import Tagtext from './components/Tagtext.vue';
 import Tablevue from './components/Table.vue';
+import Playtext from './components/Playtext.vue';
 import { router } from './router';
 const app = createApp(App);
 app.directive('highlight', function (el) {
@@ -26,3 +27,4 @@ app.component('Pagetitle', Pagetitle);
 app.component('Pagecontent', Pagecontent);
 app.component('Tagtext', Tagtext);
 app.component('Tablevue', Tablevue);
+app.component('Playtext', Playtext);

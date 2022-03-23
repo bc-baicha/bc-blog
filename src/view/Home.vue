@@ -3,7 +3,7 @@
     <Topnav />
     <main>
       <img class="bc-home-img" src="../assets/home.gif" alt="" />
-      <Playtext text="今天也是元气满满的一天~~" :width="370" />
+      <Playtext text="今天也是元气满满的一天~~" />
       <div class="text"><a>简单的记录点东西</a></div>
       <div @click="onPush" class="btn-grad">Get Started -></div>
     </main>
@@ -11,10 +11,9 @@
 </template>
 <script lang="ts">
 import Topnav from "../components/Topnav.vue";
-import Playtext from "../components/Playtext.vue";
 import { router } from "../router";
 export default {
-  components: { Topnav, Playtext },
+  components: { Topnav },
   setup() {
     const onPush = () => {
       const showKey = localStorage.getItem("showKey");

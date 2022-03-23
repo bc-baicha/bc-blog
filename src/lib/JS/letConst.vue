@@ -1,5 +1,5 @@
 <template>
-  <Pagetitle text="let 块级作用域和const" />
+  <Pagetitle text="Let块级作用域和const" />
   <Pagecontent>
     <h3>为什么要使用块级作用域？</h3>
     <div>

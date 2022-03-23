@@ -1,5 +1,5 @@
 <template>
-  <Pagetitle text="多重边框demo" />
+  <Pagetitle text="多重边框" />
   <Pagecontent>
     <Heightcode>
       <pre>

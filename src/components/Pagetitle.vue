@@ -1,5 +1,7 @@
 <template>
-  <div class="page-title">{{ text }}</div>
+  <div class="page-title">
+    <Playtext :text="text" toColor="#1E2AD2" endColor="#FFA6B7" />
+  </div>
 </template>
 <script lang="ts">
 export default {
@@ -27,8 +29,9 @@ export default {
     width: 10px;
     height: 10px;
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: 0%;
+    top: 30%;
+    transform: translate(-0%, -50%);
     opacity: 0;
   }
 }
