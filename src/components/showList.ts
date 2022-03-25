@@ -72,6 +72,10 @@ const showList = {
       {
         name: 'Grid 学习',
         path: '/gridstudy'
+      },
+      {
+        name: '你不知道的HTML',
+        path: '/htmllable'
       }
     ]
   },
