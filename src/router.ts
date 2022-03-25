@@ -26,7 +26,9 @@ import Introduce from './lib/React/React-hooks/introduce.vue';
 import Reactredux from './lib/React/React-redux/index.vue';
 import Eventprocess from './lib/React/Event/Eventprocess.vue';
 import Syntheticevent from './lib/React/Event/Syntheticevent.vue';
-import Lifecycle from './lib/React/Lifecycle.vue'
+import Lifecycle from './lib/React/Lifecycle.vue';
+import Fibercontrast from './lib/React/Fibercontrast.vue';
+
 const history = createWebHashHistory();
 const pathFC = (value) => {
   return import(`./lib/${value}.vue`)
@@ -66,7 +68,8 @@ const router = createRouter({
             { path: 'redux', component: Reactredux },
             { path: 'eventprocess', component: Eventprocess },
             { path: 'syntheticevent', component: Syntheticevent },
-            { path: 'lifecycle', component: Lifecycle }
+            { path: 'lifecycle', component: Lifecycle },
+            { path: 'fibercontrast', component: Fibercontrast },
           ]
         }
 

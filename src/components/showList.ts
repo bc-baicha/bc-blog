@@ -110,6 +110,10 @@ const showList = {
       {
         name: 'React 生命周期',
         path: '/react/Lifecycle'
+      },
+      {
+        name: 'React Fiber',
+        path: '/react/fibercontrast'
       }
       // {
       //   name: "react-redux",
