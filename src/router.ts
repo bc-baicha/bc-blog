@@ -9,7 +9,7 @@ import Closure from './lib/JS/Closure.vue';
 import Prototype from './lib/JS/Prototype.vue';
 import Packagetool from './lib/JS/Packagetool.vue';
 import Newintroduce from './lib/JS/Newintroduce.vue';
-import FCexporess from './lib/JS/FCexpress.vue';
+import FCexpress from './lib/JS/FCexpress.vue';
 import Stackheap from './lib/JS/Stackheap.vue';
 import Moduleloaded from './lib/JS/Moduleloaded.vue';
 /** 这是CSS模块*/
@@ -49,7 +49,7 @@ const router = createRouter({
         { path: 'prototype', component: Prototype },
         { path: 'packagetool', component: Packagetool },
         { path: 'newintroduce', component: Newintroduce },
-        { path: 'fcexporess', component: FCexporess },
+        { path: 'fcexpress', component: FCexpress },
         { path: 'stackHeap', component: Stackheap },
         { path: 'moduleLoaded', component: Moduleloaded },
         // 这是CSS模块
