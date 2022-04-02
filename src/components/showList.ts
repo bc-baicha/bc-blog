@@ -42,6 +42,10 @@ const showList = {
       {
         name: 'JS 模块加载',
         path: '/moduleLoaded'
+      },
+      {
+        name: '事件代理',
+        path: '/eventagent'
       }
     ],
   },

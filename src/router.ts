@@ -12,6 +12,7 @@ import Newintroduce from './lib/JS/Newintroduce.vue';
 import FCexpress from './lib/JS/FCexpress.vue';
 import Stackheap from './lib/JS/Stackheap.vue';
 import Moduleloaded from './lib/JS/Moduleloaded.vue';
+import Eventagent from './lib/JS/Eventagent.vue';
 /** 这是CSS模块*/
 import Multipleborders from './lib/CSS/Multipleborders.vue';
 import Stripesbackground from './lib/CSS/Stripesbackground.vue';
@@ -52,6 +53,7 @@ const router = createRouter({
         { path: 'fcexpress', component: FCexpress },
         { path: 'stackHeap', component: Stackheap },
         { path: 'moduleLoaded', component: Moduleloaded },
+        { path: 'eventagent', component: Eventagent },
         // 这是CSS模块
         { path: 'multipleborders', component: Multipleborders },
         { path: 'stripesbackground', component: Stripesbackground },
