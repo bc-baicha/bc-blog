@@ -80,6 +80,10 @@ const showList = {
       {
         name: '你不知道的HTML',
         path: '/htmllable'
+      },
+      {
+        name: '背景动态渐变色',
+        path: '/bggradient'
       }
     ]
   },

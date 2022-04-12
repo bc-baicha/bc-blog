@@ -21,6 +21,7 @@ import Poptip from './lib/CSS/Poptip.vue';
 import Interview from './lib/CSS/Interview.vue';
 import Gridstudy from './lib/CSS/Gridstudy.vue';
 import Htmllable from './lib/CSS/Htmllable.vue';
+import Bggradient from './lib/CSS/Bggradient.vue';
 /**这是React模块 */
 import React from './lib/React/index.vue';
 import Introduce from './lib/React/React-hooks/introduce.vue';
@@ -62,6 +63,7 @@ const router = createRouter({
         { path: 'interview', component: Interview },
         { path: 'gridstudy', component: Gridstudy },
         { path: 'htmllable', component: Htmllable },
+        { path: 'bggradient', component: Bggradient },
         {
           path: 'react', component: React,
           redirect: '/doc/react/introduce',
