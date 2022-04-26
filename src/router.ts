@@ -32,9 +32,6 @@ import Lifecycle from './lib/React/Lifecycle.vue';
 import Fibercontrast from './lib/React/Fibercontrast.vue';
 
 const history = createWebHashHistory();
-const pathFC = (value) => {
-  return import(`./lib/${value}.vue`)
-}
 const router = createRouter({
   history: history,
   routes: [
