@@ -87,6 +87,7 @@
 }
 
 //case2：使用flex布局（推荐使用）
+//第一种flex实现
 .father {
   display: flex;
   justify-content: center;
@@ -100,6 +101,21 @@
     background-color: rebeccapurple;
   }
 }
+//第二种flex实现
+.father {
+  display: grid;
+  place-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  .child {
+    width: 50px;
+    height: 50px;
+    background-color: rebeccapurple;
+  }
+}
+
+
 
 //case3：使用绝对定位+transform
 .father {
