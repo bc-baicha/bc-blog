@@ -78,6 +78,10 @@ const showList = {
         path: '/gridstudy'
       },
       {
+        name: 'Flex 学习',
+        path: '/flexstudy'
+      },
+      {
         name: '你不知道的HTML',
         path: '/htmllable'
       },

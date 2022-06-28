@@ -22,6 +22,7 @@ import Interview from './lib/CSS/Interview.vue';
 import Gridstudy from './lib/CSS/Gridstudy.vue';
 import Htmllable from './lib/CSS/Htmllable.vue';
 import Bggradient from './lib/CSS/Bggradient.vue';
+import FlexStudy from './lib/CSS/FlexStudy.vue';
 /**这是React模块 */
 import React from './lib/React/index.vue';
 import Introduce from './lib/React/React-hooks/introduce.vue';
@@ -61,6 +62,7 @@ const router = createRouter({
         { path: 'gridstudy', component: Gridstudy },
         { path: 'htmllable', component: Htmllable },
         { path: 'bggradient', component: Bggradient },
+        { path: 'flexstudy', component: FlexStudy },
         {
           path: 'react', component: React,
           redirect: '/doc/react/introduce',
