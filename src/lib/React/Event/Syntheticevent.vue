@@ -1,5 +1,5 @@
 <template>
-  <Pagetitle text="自述合成事件" />
+  <PageTitle text="自述合成事件" />
   <Pagecontent>
     <h4>
       首先React的所有事件并没有绑定到具体的DOM节点，而是绑定到了document上，<br />

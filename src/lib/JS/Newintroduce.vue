@@ -1,5 +1,5 @@
 <template>
-  <Pagetitle text="JS 中New的作用" />
+  <PageTitle text="JS 中New的作用" />
   <Pagecontent>
     <h4>MDN上的介绍：</h4>
     <Tagtext>

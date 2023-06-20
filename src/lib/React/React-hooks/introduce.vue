@@ -1,5 +1,5 @@
 <template>
-  <Pagetitle text="hooks的使命" />
+  <PageTitle text="hooks的使命" />
   <Pagecontent>
     <h4>逻辑组件复用</h4>
     <ul>

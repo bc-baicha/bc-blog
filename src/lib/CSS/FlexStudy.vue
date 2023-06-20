@@ -1,5 +1,5 @@
 <template>
-  <Pagetitle text="Flex 学习" />
+  <PageTitle text="Flex 学习" />
   <Pagecontent>
     <h3>骰子布局</h3>
     <div class="box">

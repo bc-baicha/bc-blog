@@ -1,5 +1,5 @@
 <template>
-  <Pagetitle text="npm,yarn,cnpm基本学习" />
+  <PageTitle text="npm,yarn,cnpm基本学习" />
   <Pagecontent>
     <h4>首先简单的了解下：</h4>
     <ul>

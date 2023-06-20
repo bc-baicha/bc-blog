@@ -1,5 +1,5 @@
 <template>
-  <Pagetitle text="为什么VUE不使用Fiber？" />
+  <PageTitle text="为什么VUE不使用Fiber？" />
   <Pagecontent>
     <h3>react vue 响应式原理</h3>
     <Tagtext>

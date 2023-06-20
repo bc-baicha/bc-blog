@@ -1,5 +1,5 @@
 <template>
-  <Pagetitle text="事件代理-应用场景" />
+  <PageTitle text="事件代理-应用场景" />
   <Pagecontent>
     <h3>一、是什么？</h3>
     <ul>

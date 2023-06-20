@@ -1,5 +1,5 @@
 <template>
-  <Pagetitle text="React 事件处理" />
+  <PageTitle text="React 事件处理" />
   <Pagecontent>
     <h4>react事件和DOM事件</h4>
     <Tablevue>

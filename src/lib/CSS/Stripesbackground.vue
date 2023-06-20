@@ -1,5 +1,5 @@
 <template>
-  <Pagetitle text="条纹背景" />
+  <PageTitle text="条纹背景" />
   <Pagecontent>
     <h3>进度条</h3>
     <Heightcode>

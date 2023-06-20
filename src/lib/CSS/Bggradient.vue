@@ -1,5 +1,5 @@
 <template>
-  <Pagetitle text="背景动态渐变色" />
+  <PageTitle text="背景动态渐变色" />
   <Pagecontent>
     <div class="box">Gradient Background Animation</div>
     <Heightcode>

@@ -1,5 +1,5 @@
 <template>
-  <Pagetitle text="Grid 学习" />
+  <PageTitle text="Grid 学习" />
   <Pagecontent>
     <h3>Grid 的布局属性</h3>
     <Tagtext>

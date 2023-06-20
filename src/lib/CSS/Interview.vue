@@ -1,5 +1,5 @@
 <template>
-  <Pagetitle text="CSS 例题" />
+  <PageTitle text="CSS 例题" />
   <Pagecontent>
     <h3>1、有两个元素，左边元素宽度固定，右边元素宽度自适应，写出实现方法？</h3>
     <Heightcode>

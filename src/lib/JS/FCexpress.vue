@@ -1,5 +1,5 @@
 <template>
-  <Pagetitle text="函数声明和函数表达式" />
+  <PageTitle text="函数声明和函数表达式" />
   <Pagecontent>
     <h3>函数声明：</h3>
     <Tagtext>

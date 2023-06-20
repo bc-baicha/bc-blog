@@ -1,5 +1,5 @@
 <template>
-  <Pagetitle text="React 生命周期" />
+  <PageTitle text="React 生命周期" />
   <Pagecontent>
     <h4>最适合和服务端进行交互的周期函数是：componentDidmount</h4>
     <Tagtext>

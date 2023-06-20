@@ -1,5 +1,5 @@
 <template>
-  <Pagetitle text="堆和栈学习" />
+  <PageTitle text="堆和栈学习" />
   <Pagecontent>
     <h3>数据类型：</h3>
     <Tagtext>

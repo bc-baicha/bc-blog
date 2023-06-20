@@ -3,6 +3,7 @@
     <Directory :list="showList.javascript" />
     <Directory :list="showList.css" />
     <Directory :list="showList.react" />
+    <Directory :list="showList.interview" />
   </div>
 </template>
 <script lang="ts">

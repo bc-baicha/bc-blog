@@ -1,5 +1,5 @@
 <template>
-  <Pagetitle text="圆与半圆" />
+  <PageTitle text="圆与半圆" />
   <Pagecontent>
     <Heightcode>
       <pre>

@@ -1,5 +1,5 @@
 <template>
-  <Pagetitle text="JS闭包" />
+  <PageTitle text="JS闭包" />
   <Pagecontent>
     <h4>MDN对闭包的阐述：</h4>
     <Tagtext>

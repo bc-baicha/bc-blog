@@ -1,5 +1,5 @@
 <template>
-  <Pagetitle text="JavaScript类数组" />
+  <PageTitle text="JavaScript类数组" />
   <Pagecontent>
     <h3>定义：</h3>
     <Tagtext>

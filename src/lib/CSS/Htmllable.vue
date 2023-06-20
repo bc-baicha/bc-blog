@@ -1,5 +1,5 @@
 <template>
-  <Pagetitle text="你不知道的html" />
+  <PageTitle text="你不知道的html" />
   <Pagecontent>
     <h3>1、input标签：输入验证</h3>
     <p>html提供的原生检验方式</p>

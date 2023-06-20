@@ -1,7 +1,7 @@
 const showList = {
   javascript: {
     name: "JavaScript",
-    key: 'JavaScript',
+    key: "JavaScript",
     data: [
       {
         name: "let 块级作用域和const",
@@ -28,105 +28,105 @@ const showList = {
         path: "/packagetool",
       },
       {
-        name: 'New 的作用',
-        path: '/newintroduce'
+        name: "New 的作用",
+        path: "/newintroduce",
       },
       {
-        name: '函数声明 / 表达式',
-        path: '/fcexpress'
+        name: "函数声明 / 表达式",
+        path: "/fcexpress",
       },
       {
-        name: '堆和栈',
-        path: '/stackHeap'
+        name: "堆和栈",
+        path: "/stackHeap",
       },
       {
-        name: 'JS 模块加载',
-        path: '/moduleLoaded'
+        name: "JS 模块加载",
+        path: "/moduleLoaded",
       },
       {
-        name: '事件代理',
-        path: '/eventagent'
-      }
+        name: "事件代理",
+        path: "/eventagent",
+      },
     ],
   },
   css: {
-    name: 'CSS',
-    key: 'CSS',
+    name: "CSS",
+    key: "CSS",
     data: [
       {
         name: "多重边框",
-        path: '/multipleborders'
+        path: "/multipleborders",
       },
       {
-        name: '条纹背景',
-        path: '/stripesbackground'
+        name: "条纹背景",
+        path: "/stripesbackground",
       },
       {
-        name: '圆与半圆',
-        path: '/ellipse'
+        name: "圆与半圆",
+        path: "/ellipse",
       },
       {
-        name: '提示气泡',
-        path: '/poptip'
+        name: "提示气泡",
+        path: "/poptip",
       },
       {
-        name: 'CSS 经典题',
-        path: '/interview'
+        name: "CSS 经典题",
+        path: "/interview",
       },
       {
-        name: 'Grid 学习',
-        path: '/gridstudy'
+        name: "Grid 学习",
+        path: "/gridstudy",
       },
       {
-        name: 'Flex 学习',
-        path: '/flexstudy'
+        name: "Flex 学习",
+        path: "/flexstudy",
       },
       {
-        name: '你不知道的HTML',
-        path: '/htmllable'
+        name: "你不知道的HTML",
+        path: "/htmllable",
       },
       {
-        name: '背景动态渐变色',
-        path: '/bggradient'
-      }
-    ]
+        name: "背景动态渐变色",
+        path: "/bggradient",
+      },
+    ],
   },
   react: {
-    name: 'React',
-    key: 'React',
+    name: "React",
+    key: "React",
     data: [
       {
         name: "Hooks",
-        path: '/react/introduce',
+        path: "/react/introduce",
         children: [
           {
-            name: 'hooks使命',
-            path: '/react/introduce',
+            name: "hooks使命",
+            path: "/react/introduce",
           },
-        ]
+        ],
       },
       {
-        name: 'React事件',
-        path: '/react/eventprocess',
+        name: "React事件",
+        path: "/react/eventprocess",
         children: [
           {
-            name: '事件处理',
-            path: '/react/eventprocess',
+            name: "事件处理",
+            path: "/react/eventprocess",
           },
           {
-            name: '自述合成事件',
-            path: '/react/syntheticevent'
-          }
-        ]
+            name: "自述合成事件",
+            path: "/react/syntheticevent",
+          },
+        ],
       },
       {
-        name: 'React 生命周期',
-        path: '/react/Lifecycle'
+        name: "React 生命周期",
+        path: "/react/Lifecycle",
       },
       {
-        name: 'React Fiber',
-        path: '/react/fibercontrast'
-      }
+        name: "React Fiber",
+        path: "/react/fibercontrast",
+      },
       // {
       //   name: "react-redux",
       //   path: '/react/redux',
@@ -137,8 +137,18 @@ const showList = {
       //     },
       //   ]
       // },
-    ]
-  }
-}
+    ],
+  },
+  interview: {
+    name: "Interview",
+    key: "Interview",
+    data: [
+      {
+        name: "前端跨域问题",
+        path: "/inter/crossDomain",
+      },
+    ],
+  },
+};
 
 export { showList };

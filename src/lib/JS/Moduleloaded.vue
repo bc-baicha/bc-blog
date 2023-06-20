@@ -1,5 +1,5 @@
 <template>
-  <Pagetitle text="JS模块加载" />
+  <PageTitle text="JS模块加载" />
   <Pagecontent>
     <h3>前言</h3>
     <div>本文主要学习四种模块加载规范：</div>
