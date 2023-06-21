@@ -27,7 +27,7 @@ export default {
   setup() {
     const router = useRouter();
     const onRouterHome = () => {
-      localStorage.removeItem("showKey");
+      // localStorage.removeItem("showKey");
       router.push("/");
     };
     return {

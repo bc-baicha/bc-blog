@@ -37,9 +37,11 @@ export default {
   setup(props) {
     const { list } = props;
     const showKey = localStorage.getItem("showKey");
-    const show = ref(showKey === list.key);
+    // const show = ref(showKey === list.key);
+    const show = ref(list.key);
     const heightContent = ref<HTMLDivElement>(null);
     const localStorageSet = () => {
+      return;
       localStorage.setItem("showKey", list.key);
     };
     const onShowList = () => {

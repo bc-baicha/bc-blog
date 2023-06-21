@@ -16,10 +16,10 @@ export default {
   components: { Topnav },
   setup() {
     const onPush = () => {
-      const showKey = localStorage.getItem("showKey");
-      if (!showKey) {
-        localStorage.setItem("showKey", "JavaScript");
-      }
+      // const showKey = localStorage.getItem("showKey");
+      // if (!showKey) {
+      //   localStorage.setItem("showKey", "JavaScript");
+      // }
       router.replace("/doc");
     };
     return { onPush };
