@@ -1,20 +1,20 @@
 <template>
   <PageTitle text="你不知道的html" />
-  <Pagecontent>
+  <PageContent>
     <h3>1、input标签：输入验证</h3>
     <p>html提供的原生检验方式</p>
     <div v-viewer>
       <img src="../../assets/input.png" alt="" />
     </div>
     <h3>meta标签：自动跳转/刷新</h3>
-    <Tagtext>
+    <TagText>
       &lt;meta http-equiv="Refresh" content="5; URL=page2.html" >
-    </Tagtext>
+    </TagText>
     <p>
       上面的代码会在 5s 之后自动跳转到同域下的 page2.html 页面。要实现 PPT
       自动播放的功能，只需要在每个页面的 meta 标签内设置好下一个页面的地址即可。
     </p>
-    <Tagtext> &lt;meta http-equiv="Refresh" content="60" > </Tagtext>
+    <TagText> &lt;meta http-equiv="Refresh" content="60" > </TagText>
     <p>
       另一种场景，比如每隔一分钟就需要刷新页面的大屏幕监控，也可以通过 meta
       标签来实现，只需去掉后面的 URL 即可：
@@ -29,7 +29,7 @@
     <div>
       下面代码中，通过定时修改 title 标签内容，模拟了类似消息提醒的闪烁效果：
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 let count = 5;
@@ -45,9 +45,9 @@ const timer = setInterval(() => {
 }, 2000);
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <div>title文字滚动效果：</div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 setInterval(function () {
@@ -60,7 +60,7 @@ setInterval(function () {
 }, 250);
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <h3>4.script 标签：调整加载顺序提升渲染速度</h3>
     <p>
       由于浏览器的底层运行机制，渲染引擎在解析 HTML 时，若遇到 script
@@ -113,12 +113,12 @@ setInterval(function () {
       picture标签可以根据屏幕匹配的不同尺寸显示不同图片，如果没有匹配到或浏览器不支持
       picture 属性则使用 img 元素：
     </p>
-    <Tagtext>
+    <TagText>
       &lt;picture><br />
       &lt;source media="(min-width: 968px)" srcset="large_img.jpg"/><br />
       &lt;source media="(min-width: 360px)" srcset="small_img.jpg" /><br />
       &lt;img src="default_img.jpg" alt="avatar" /> &lt;/picture><br />
-    </Tagtext>
+    </TagText>
     <h3>7.input标签：颜色选择器</h3>
     <p>
       可以通过value给颜色选择器设置初始值，也可以通过value属性获取颜色选择器的颜色。
@@ -128,7 +128,7 @@ setInterval(function () {
     <div>
       我们可以将base元素的target属性设置为_black，这样当用户单击链接时，它始终会在新选项卡中打开。如果想避免用户无意中离开某个页面，这样做会很有用。
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 &lt;head>
@@ -140,12 +140,12 @@ setInterval(function () {
 &lt;/div>
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <h3>9.placeholder 样式</h3>
     <p>可以使用::placeholder CSS 选择器更改占位符文本的样式</p>
     <input class="test" type="text" placeholder="测试1" /><br />
     <input type="text" placeholder="测试2" />
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 &lt;input class="test" type="text" placeholder="测试1" />
@@ -156,8 +156,8 @@ setInterval(function () {
 }    
         </code>
       </pre>
-    </Heightcode>
-  </Pagecontent>
+    </HeightCode>
+  </PageContent>
 </template>
 <style lang="less" scoped>
 .test::placeholder {

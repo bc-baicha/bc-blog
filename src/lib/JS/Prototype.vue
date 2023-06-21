@@ -1,17 +1,17 @@
 <template>
   <PageTitle text="JS原型和原型链" />
-  <Pagecontent>
+  <PageContent>
     <h4>JS 创建对象：</h4>
-    <Tagtext>
+    <TagText>
       常见的几种创建方法：构造函数创建，字面量表示法创建，Object构造函数创建
-    </Tagtext>
+    </TagText>
     <h4>首先我们要明确：</h4>
-    <Tagtext>
+    <TagText>
       1、__proto__和construtor是对象独有的<br />
       2、prototype属性是函数独有的；<br />
-    </Tagtext>
+    </TagText>
     <strong>example：</strong>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 function Person() {
@@ -25,18 +25,18 @@ console.log(person1.name) // Kevin
 console.log(person2.name) // Kevin
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <h4>那这个函数的 prototype 属性到底指向的是什么呢？是这个函数的原型吗？</h4>
-    <Tagtext>
+    <TagText>
       其实，函数的 prototype
       属性指向了一个对象，这个对象正是调用该构造函数而创建的实例的原型，<br />
       也就是这个例子中的 person1 和 person2 的原型。
-    </Tagtext>
+    </TagText>
     <h4>那什么是原型呢？</h4>
-    <Tagtext>
+    <TagText>
       每一个JavaScript对象(null除外)在创建的时候就会与之关联另一个对象，<br />
       这个对象就是我们所说的原型，每一个对象都会从原型"继承"属性。
-    </Tagtext>
+    </TagText>
     <p>让我们用一张图表示构造函数和实例原型之间的关系：</p>
     <div v-viewer>
       <img
@@ -51,11 +51,11 @@ console.log(person2.name) // Kevin
       这时候我们就要讲到第二个属性：
     </p>
     <h4>__proto__</h4>
-    <Tagtext>
+    <TagText>
       这是每一个JavaScript对象(除了 null
       )都具有的一个属性，叫__proto__，这个属性会指向该对象的原型。
-    </Tagtext>
-    <Heightcode>
+    </TagText>
+    <HeightCode>
       <pre>
         <code>
 function Person() {
@@ -65,7 +65,7 @@ var person = new Person();
 console.log(person.__proto__ === Person.prototype); // true
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <div v-viewer>
       <img
         src="https://pic4.zhimg.com/80/v2-b0519c9619ffb110a88de331ab31837f_1440w.jpg"
@@ -73,10 +73,10 @@ console.log(person.__proto__ === Person.prototype); // true
       />
     </div>
     <strong>规范里面的解释是：</strong>
-    <Tagtext>
+    <TagText>
       object that provides shared properties for other objects<br />
       为其它对象提供共享属性的对象
-    </Tagtext>
+    </TagText>
     <h4>
       既然实例对象和构造函数都可以指向原型，那么原型是否有属性指向构造函数或者实例呢？
     </h4>
@@ -86,7 +86,7 @@ console.log(person.__proto__ === Person.prototype); // true
       这就要讲到第三个属性：constructor，每个原型都有一个 constructor
       属性指向关联的构造函数。</i
     >
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 function Person() {
@@ -95,14 +95,14 @@ function Person() {
 console.log(Person === Person.prototype.constructor); // true
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <div v-viewer>
       <img
         src="https://pic4.zhimg.com/80/v2-e6de0af33b148a1c5c90cfbd871a08bf_1440w.jpg"
         alt="error"
       />
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 综上所得
@@ -117,12 +117,12 @@ console.log(Person.prototype.constructor == Person) // true
 console.log(Object.getPrototypeOf(person) === Person.prototype) // true
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <h4>实例与原型：</h4>
     <i>
       从上面的图上可以看出如果我们在实例对象中找不到属性，就会查找与对象关联的原型中的属性，如果还查找不到就会去原型中的原型查找，直到最顶层为止。
     </i>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
   function demo() {
@@ -136,7 +136,7 @@ console.log(Object.getPrototypeOf(person) === Person.prototype) // true
   console.log(demoTest.name); //白茶
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <p>
       上面的例子中首先给原型添加了一个name=白茶，之后又在实例对象中添加了一个name=白茶--白茶。
     </p>
@@ -154,7 +154,7 @@ console.log(Object.getPrototypeOf(person) === Person.prototype) // true
     <div>
       前面有说到，原型也是一个对象，那么我们就可以用最原始的方式创建它，那就是：
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 var obj = new Object();
@@ -162,7 +162,7 @@ obj.name = 'Kevin'
 console.log(obj.name) // Kevin
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <p>
       其实原型对象就是通过 Object 构造函数生成的，结合之前所讲，实例的 __proto__
       指向构造函数的 prototype ，所以我们再更新下关系图：
@@ -175,15 +175,15 @@ console.log(obj.name) // Kevin
     </div>
     <h4>原型链</h4>
     <p>那 Object.prototype 的原型呢？null，我们可以打印：</p>
-    <Heightcode>
+    <HeightCode>
       <pre>
       <code>
         console.log(Object.prototype.__proto__ === null) // true
       </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <p>然而 null 究竟代表了什么呢？</p>
-    <Tagtext>null 表示“没有对象”，即该处不应该有值。</Tagtext>
+    <TagText>null 表示“没有对象”，即该处不应该有值。</TagText>
     <div>
       所以 Object.prototype.__proto__ 的值为 null 跟 Object.prototype
       没有原型，其实表达了一个意思。
@@ -200,7 +200,7 @@ console.log(obj.name) // Kevin
     </div>
     <strong>原型链：相互关联的原型组成的链状结构，也就是蓝色的这条线。</strong>
     <div>首先是 constructor 属性，我们看个例子：</div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 function Person() {
@@ -210,14 +210,14 @@ var person = new Person();
 console.log(person.constructor === Person); // true
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <p>
       当获取 person.constructor 时，其实 person 中并没有 constructor 属性,<br />
       当不能读取到constructor 属性时，会从 person 的原型也就是 Person.prototype
       中读取，<br />
       正好原型中有该属性，所以：
     </p>
-    <Tagtext>person.constructor === Person.prototype.constructor</Tagtext>
+    <TagText>person.constructor === Person.prototype.constructor</TagText>
     <p>
       其次是 __proto__ ，绝大部分浏览器都支持这个非标准的方法访问原型，<br />
       然而它并不存在于Person.prototype 中，<br />
@@ -225,5 +225,5 @@ console.log(person.constructor === Person); // true
       不如说是一个 getter/setter，当使用 obj.__proto__ 时，可以理解成返回了
       Object.getPrototypeOf(obj)。
     </p>
-  </Pagecontent>
+  </PageContent>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div class="page-title">
-    <Playtext :text="text" toColor="#1E2AD2" endColor="#FFA6B7" />
+    <PlayText :text="text" toColor="#1E2AD2" endColor="#FFA6B7" />
   </div>
 </template>
 <script lang="ts">

@@ -1,6 +1,6 @@
 <template>
   <PageTitle text="JS模块加载" />
-  <Pagecontent>
+  <PageContent>
     <h3>前言</h3>
     <div>本文主要学习四种模块加载规范：</div>
     <ul>
@@ -46,7 +46,7 @@
       的时候才去加载模块文件，加载完再接着执行。
     </p>
     <h3>CommonJS与AMD的区别：</h3>
-    <Tagtext>
+    <TagText>
       <ul>
         <li>
           1、CommonJS
@@ -61,7 +61,7 @@
           AMD 规范。
         </li>
       </ul>
-    </Tagtext>
+    </TagText>
     <h3>ES6与CommonJS的三个重大差异：</h3>
     <ul>
       <li>1、CommonJS 模块输出的是一个值的拷贝，ES6 模块输出的是值的引用。</li>
@@ -72,18 +72,18 @@
       </li>
     </ul>
     <h4>加载时的区别：</h4>
-    <Tagtext>
+    <TagText>
       CommonJS
       加载的是一个对象（即module.exports属性），该对象只有在脚本运行完才会生成。而
       ES6
       模块不是对象，它的对外接口只是一种静态定义，在代码静态解析阶段就会生成。
-    </Tagtext>
+    </TagText>
     <h3>我们重点要了解的是第一个差异：</h3>
-    <Tagtext
+    <TagText
       >CommonJS
-      模块输出的是值的拷贝，也就是说，一旦输出一个值，模块内部的变化就影响不到这个值。</Tagtext
+      模块输出的是值的拷贝，也就是说，一旦输出一个值，模块内部的变化就影响不到这个值。</TagText
     >
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 let current = 1;
@@ -102,13 +102,13 @@ num.addCurrent();
 console.log(num.current);//1
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <h4>
       从上面的例子中我们看到，两次输出的结果是一致的，current的值并未改变，这是为什么呢？
     </h4>
     <div>这是因为num.current是一个基本类型的值，会被缓存。</div>
     <h4>如果按照这种写法我们该怎么获取它改变之后的值呢？</h4>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 //这里就直接写改变之后的导出对象了
@@ -120,8 +120,8 @@ module.exports = {
 }
         </code>
       </pre>
-    </Heightcode>
-    <Heightcode>
+    </HeightCode>
+    <HeightCode>
       <pre>
         <code>
 //使用引用数据类型
@@ -142,10 +142,10 @@ num.addCurrent();
 console.log(num.current);//{name: "爱喝茶"}
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <div>上面的结果是会发生改变的，可以看出这是浅拷贝。</div>
     <h4>下面我们将这个例子改为ES6的引入方式看下：</h4>
-    <Heightcode>
+    <HeightCode>
       <pre>
       <code>
 let current = 1;
@@ -168,21 +168,21 @@ console.log(current);//2
 console.log(obj);//{name: "爱喝茶"}
       </code>
     </pre>
-    </Heightcode>
+    </HeightCode>
     <h4>从输出结果可以看出上面的数据都发生了变化，这是为什么？</h4>
-    <Tagtext>
+    <TagText>
       ES6 模块的运行机制与 CommonJS 不一样。JS
       引擎对脚本静态分析的时候，遇到模块加载命令import，就会生成一个只读引用。等到脚本真正执行时，再根据这个只读引用，到被加载的那个模块里面去取值。换句话说，ES6
       的import有点像 Unix
       系统的“符号连接”，原始值变了，import加载的值也会跟着变。因此，ES6
       模块是动态引用，并且不会缓存值，模块里面的变量绑定其所在的模块。
-    </Tagtext>
+    </TagText>
     <h3>export 命令</h3>
     <p>
       一个模块就是一个独立的文件。该文件内部的所有变量，外部无法获取。如果你希望外部能够读取模块内部的某个变量，就必须使用export关键字输出该变量。下面是一个
       JS 文件，里面使用export命令输出变量。
     </p>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 //常见的几种写法
@@ -226,13 +226,13 @@ console.log(num.a);//1
 //这里的num就是导入的全部模块变量，是一个对象
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <h4>export default 命令</h4>
     <div>
       使用import命令的时候，用户需要知道所要加载的变量名或函数名，否则无法加载，这里的export
       default命令，就是为模块指定默认输出。
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 //第一种写法
@@ -250,32 +250,32 @@ console.log(foo()) // demo
 export default const a = 1;
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <div>
       从上面的例子中我们看到，我在使用export命令导出的demo函数，在引用的时候，使用的命名是foo但是还是可以执行函数，并且输出正确的值。这是为什么呢？
     </div>
     <p>原因：</p>
-    <Tagtext>
+    <TagText>
       export
       default就是输出一个叫做default的变量或方法，然后系统允许你为它取任意名字。<br />
       export default命令的本质是将后面的值，赋给default变量
-    </Tagtext>
+    </TagText>
     <p>赋给default变量这句话让我们举例子解释下，更清楚一点：</p>
-    <Tagtext>
+    <TagText>
       function demo(){return 'demo'};<br />
       export default demo; <br /><br />
       1、首先声明了一个函数demo，紧接着使用了export default命令<br />
       2、这里并不是把demo函数输出了，而是进行了赋值，default = demo；
-    </Tagtext>
+    </TagText>
     <h3>下面是export default 命令的几个注意的地方：</h3>
-    <Tagtext>
+    <TagText>
       export
       default命令用于指定模块的默认输出。显然，一个模块只能有一个默认输出，因此export
       default命令只能使用一次。<br />
       因为export
-      default命令其实只是输出一个叫做default的变量，所以它后面不能跟变量声明语句。</Tagtext
+      default命令其实只是输出一个叫做default的变量，所以它后面不能跟变量声明语句。</TagText
     >
-  </Pagecontent>
+  </PageContent>
 </template>
 <style lang="less" scoped>
 a {

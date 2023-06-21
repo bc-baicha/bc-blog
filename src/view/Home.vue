@@ -3,7 +3,7 @@
     <Topnav />
     <main>
       <img class="bc-home-img" src="../assets/home.gif" alt="" />
-      <Playtext text="今天也是元气满满的一天~~" />
+      <PlayText text="今天也是元气满满的一天~~" />
       <div class="text"><a>简单的记录点东西</a></div>
       <div @click="onPush" class="btn-grad">Get Started -></div>
     </main>

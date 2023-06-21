@@ -1,6 +1,6 @@
 <template>
   <PageTitle text="自述合成事件" />
-  <Pagecontent>
+  <PageContent>
     <h4>
       首先React的所有事件并没有绑定到具体的DOM节点，而是绑定到了document上，<br />
       然后由统一的事件处理程序来处理，同时也是基于浏览器的冒泡捕获机制，所有的节点都会在document上触发。
@@ -30,5 +30,5 @@
       <li>原生事件先执行</li>
       <li>react合成事件后执行</li>
     </ul>
-  </Pagecontent>
+  </PageContent>
 </template>

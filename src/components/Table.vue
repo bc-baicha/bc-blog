@@ -1,12 +1,12 @@
 <template>
-  <table class="tableVue">
+  <table class="TableVue">
     <tbody>
       <slot />
     </tbody>
   </table>
 </template>
 <style lang="less">
-.tableVue {
+.TableVue {
   border-collapse: collapse;
   background-color: #ebebeb;
   table,

@@ -1,6 +1,6 @@
 <template>
   <PageTitle text="npm,yarn,cnpm基本学习" />
-  <Pagecontent>
+  <PageContent>
     <h4>首先简单的了解下：</h4>
     <ul>
       <li>
@@ -37,16 +37,16 @@
     </ul>
     <h4>npm常使用的命令：</h4>
     <p>1、安装包（如果没有指定版本号，那么安装最新版本）</p>
-    <Tagtext>
+    <TagText>
       npm install -g 包名称（全局安装）<br />
       npm install 包名称（本地安装）
-    </Tagtext>
+    </TagText>
     <p>2、安装包的时候可以指定版本</p>
-    <Tagtext> npm install -g 包名称@版本号 </Tagtext>
+    <TagText> npm install -g 包名称@版本号 </TagText>
     <p>3、卸载包</p>
-    <Tagtext>npm uninstall -g 包名称 </Tagtext>
+    <TagText>npm uninstall -g 包名称 </TagText>
     <p>4、更新包（更新到最新版本）</p>
-    <Tagtext>npm update -g 包名称 </Tagtext>
+    <TagText>npm update -g 包名称 </TagText>
     <h4>环境配置简述：</h4>
     <p>
       开发环境（平时开发使用的环境）<br />
@@ -54,7 +54,7 @@
       --save 向生产环境添加依赖 dependencies<br />
       --save-dev 向开发环境添加依赖 devDependencies
     </p>
-    <Tablevue>
+    <TableVue>
       <tr>
         <th>npm init</th>
         <td>
@@ -94,10 +94,10 @@
           --production或者注明NODE_ENV变量值为production时，不会自动下载模块大node_modules目录中(开发环境)
         </td>
       </tr>
-    </Tablevue>
+    </TableVue>
     <h4>yarn基本使用（类比npm的基本使用，在性能上比npm更好）</h4>
     <p>安装yarn工具：npm install -g yarn</p>
-    <Tablevue>
+    <TableVue>
       <tr>
         <th>操作</th>
         <th>npm命令</th>
@@ -151,7 +151,7 @@
         <td>npm run 命令</td>
         <td>yarn run or yarn 命令</td>
       </tr>
-    </Tablevue>
+    </TableVue>
     <h4>npm的缺点：</h4>
     <ul>
       <li>
@@ -199,5 +199,5 @@
       5、更好的语义化： yarn改变了一些npm命令的名称，比如 yarn
       add/remove，感觉上比 npm 原本的 install/uninstall 要更清晰。
     </p>
-  </Pagecontent>
+  </PageContent>
 </template>

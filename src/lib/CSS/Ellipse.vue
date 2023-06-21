@@ -1,7 +1,7 @@
 <template>
   <PageTitle text="圆与半圆" />
-  <Pagecontent>
-    <Heightcode>
+  <PageContent>
+    <HeightCode>
       <pre>
         <code>
 {{divs}}
@@ -46,7 +46,7 @@ main {
 }
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <main>
       <div class="ellipse"></div>
       <div class="ellipse"></div>
@@ -55,7 +55,7 @@ main {
       <div class="ellipse"></div>
       <div class="ellipse"></div>
     </main>
-  </Pagecontent>
+  </PageContent>
 </template>
 <script lang="ts">
 export default {

@@ -1,8 +1,8 @@
 <template>
   <PageTitle text="背景动态渐变色" />
-  <Pagecontent>
+  <PageContent>
     <div class="box">Gradient Background Animation</div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 &lt;div class="box">Gradient Background Animation&lt;/div>
@@ -35,10 +35,10 @@
 }
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <h3>文字渐变色</h3>
     <div class="textColor">文字渐变色</div>
-    <heightcode>
+    <HeightCode>
       <pre>
         <code>
 &lt;div class="textColor">文字渐变色&lt;/div>
@@ -59,8 +59,8 @@
 }
         </code>
       </pre>
-    </heightcode>
-  </Pagecontent>
+    </HeightCode>
+  </PageContent>
 </template>
 <style lang="less" scoped>
 .box {

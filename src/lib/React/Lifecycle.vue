@@ -1,12 +1,12 @@
 <template>
   <PageTitle text="React 生命周期" />
-  <Pagecontent>
+  <PageContent>
     <h4>最适合和服务端进行交互的周期函数是：componentDidmount</h4>
-    <Tagtext>
+    <TagText>
       在这个时候，组件完成挂载，代表的Dom也已经挂载到了页面的Dom树上，即使获取到的数据需要直接操作Dom数，这时也是安全的
-    </Tagtext>
+    </TagText>
     <h4>更新阶段方法的调用：</h4>
-    <Tagtext>
+    <TagText>
       声明周期的调用：<br /><br />
       componentWillReceiveProps -> shouldComponentUpdate -> componentWillUpdate
       -> render -> componentDidUpdate <br />
@@ -14,14 +14,14 @@
       组件收到新的props（props中的数据并不一定真正发生变化）->
       决定是否需要继续执行更新过程 -> 组件代表的虚拟DOM即将更新 ->
       组件重新计算出新的虚拟DOM -> 虚拟DOM对应的真实DOM更新到真实DOM树中
-    </Tagtext>
+    </TagText>
     <h4>父组件更新或者自身调用setState进行的更新操作：</h4>
-    <Tagtext>
+    <TagText>
       shouldComponentUpate -> componentWillUpdate -> render ->
       componentDidUpdate
       <br /><br />
       这里并没有调用componentWillReceiveProps，只有当传入的props值发生变化时，才会调用该声明周期函数
-    </Tagtext>
+    </TagText>
     <h4>需要注意的点：</h4>
     <ul>
       <li>
@@ -57,14 +57,14 @@
       <li>componentWillUpdate</li>
     </ul>
     <h4>新增的生命周期函数有：</h4>
-    <Tagtext>
+    <TagText>
       getDerviedStateFromPops<br /><br />
       此生命周期函数是在state的值在任何时候都取决于props的时候使用。<br />
       因为它可以取到props和state的值，返回的结果值会直接替换掉state的值。<br /><br />
       getSnapshotBrforeUpdate<br /><br />
       此生命周期的执行时间是在render和componentDidUpdate之间执行的，<br />
       它返回的值，可以作为componentDidupdate的第三个参数使用。
-    </Tagtext>
+    </TagText>
     <h4>React 17生命周期流程：</h4>
     <div v-viewer>
       <img src="../../assets/React/3.png" alt="error" />
@@ -73,5 +73,5 @@
     <div v-viewer>
       <img src="../../assets/React/4.png" alt="error" />
     </div>
-  </Pagecontent>
+  </PageContent>
 </template>

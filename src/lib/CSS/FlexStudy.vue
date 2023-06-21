@@ -1,12 +1,12 @@
 <template>
   <PageTitle text="Flex 学习" />
-  <Pagecontent>
+  <PageContent>
     <h3>骰子布局</h3>
     <div class="box">
       <div></div>
       <div></div>
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 .pubilc {
@@ -32,12 +32,12 @@
 }
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <div class="box2">
       <div></div>
       <div></div>
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 .box2 {
@@ -48,13 +48,13 @@
 }
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <div class="box3">
       <div></div>
       <div></div>
       <div></div>
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 .box3 {
@@ -68,14 +68,14 @@
 }
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <div class="box4">
       <div></div>
       <div></div>
       <div></div>
       <div></div>
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 .box4 {
@@ -86,7 +86,7 @@
 }
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <div class="box5">
       <div></div>
       <div></div>
@@ -95,7 +95,7 @@
       <div></div>
       <div></div>
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 .box5 {
@@ -106,7 +106,7 @@
 }
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <div class="box6">
       <div>1</div>
       <div></div>
@@ -114,7 +114,7 @@
       <div></div>
       <div></div>
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 .box6 {
@@ -140,8 +140,8 @@
 }
         </code>
       </pre>
-    </Heightcode>
-  </Pagecontent>
+    </HeightCode>
+  </PageContent>
 </template>
 <style lang="less" scoped>
 @import "./flexstudy.less";

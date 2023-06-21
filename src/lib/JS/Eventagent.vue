@@ -1,6 +1,6 @@
 <template>
   <PageTitle text="事件代理-应用场景" />
-  <Pagecontent>
+  <PageContent>
     <h3>一、是什么？</h3>
     <ul>
       <li>
@@ -34,7 +34,7 @@
     <div>
       如果我们有一个list列表，列表之中有很多列表项，我们需要在点击列表项时，响应一个事件。
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 &lt;ul id="list">
@@ -46,9 +46,9 @@
 &lt;/ul>
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <p>如果给每个列表项都一一绑定一个函数，那么对于内存的消耗是非常大的。</p>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 //获取到所有的目标元素
@@ -62,12 +62,12 @@ for (let index = 0; index &lt; lis.length; index++) {
 }
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
 
     <div>
       这时候就可以事件委托，把点击事件绑定在父级元素ul上面，然后执行事件的时候再去匹配目标元素
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
       <code>
 // 给父层元素绑定事件
@@ -79,7 +79,7 @@ document.getElementById('list').addEventListener('click', function (e) {
 });
       </code>
     </pre>
-    </Heightcode>
+    </HeightCode>
     <ul>
       <li>如果列表项不多，我们可以给每个列表项都绑定一个事件。</li>
       <li>
@@ -90,7 +90,7 @@ document.getElementById('list').addEventListener('click', function (e) {
       </li>
     </ul>
     <h3>举个例子：点击input可以动态添加元素</h3>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 &lt;h1 id="btn">点击&lt;/h1>
@@ -118,7 +118,7 @@ oLi.addEventListener("click", function (e) {
 });
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <div>
       可以看到使用事件委托，在动态绑定事件的情况下是可以减少很多重复工作。
     </div>
@@ -137,7 +137,7 @@ oLi.addEventListener("click", function (e) {
         2、mousemove、mouseout这样的事件，虽然有事件冒泡，但是只能不断通过位置去计算定位，对性能消耗高，因此也是不适合于事件委托的
       </li>
     </ul>
-  </Pagecontent>
+  </PageContent>
 </template>
 <script lang="ts">
 import { onMounted, ref } from "vue";

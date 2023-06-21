@@ -25,15 +25,15 @@ const showList = {
       },
       {
         name: "npm Yarn cnpm总结",
-        path: "/packagetool",
+        path: "/packAgeTool",
       },
       {
         name: "New 的作用",
-        path: "/newintroduce",
+        path: "/newIntroduce",
       },
       {
         name: "函数声明 / 表达式",
-        path: "/fcexpress",
+        path: "/FCExPress",
       },
       {
         name: "堆和栈",
@@ -45,7 +45,7 @@ const showList = {
       },
       {
         name: "事件代理",
-        path: "/eventagent",
+        path: "/eventAgent",
       },
     ],
   },
@@ -55,11 +55,11 @@ const showList = {
     data: [
       {
         name: "多重边框",
-        path: "/multipleborders",
+        path: "/multipleBorders",
       },
       {
         name: "条纹背景",
-        path: "/stripesbackground",
+        path: "/stripesBackground",
       },
       {
         name: "圆与半圆",
@@ -67,7 +67,7 @@ const showList = {
       },
       {
         name: "提示气泡",
-        path: "/poptip",
+        path: "/popTip",
       },
       {
         name: "CSS 经典题",
@@ -75,19 +75,19 @@ const showList = {
       },
       {
         name: "Grid 学习",
-        path: "/gridstudy",
+        path: "/gridStudy",
       },
       {
         name: "Flex 学习",
-        path: "/flexstudy",
+        path: "/flexStudy",
       },
       {
         name: "你不知道的HTML",
-        path: "/htmllable",
+        path: "/htmlTag",
       },
       {
         name: "背景动态渐变色",
-        path: "/bggradient",
+        path: "/bgGradation",
       },
     ],
   },
@@ -95,29 +95,41 @@ const showList = {
     name: "React",
     key: "React",
     data: [
+      // {
+      //   name: "Hooks",
+      //   path: "/react/introduce",
+      //   children: [
+      //     {
+      //       name: "hooks使命",
+      //       path: "/react/introduce",
+      //     },
+      //   ],
+      // },
+      // {
+      //   name: "React事件",
+      //   path: "/react/eventProcess",
+      //   children: [
+      //     {
+      //       name: "事件处理",
+      //       path: "/react/eventProcess",
+      //     },
+      //     {
+      //       name: "自述合成事件",
+      //       path: "/react/compositeEvent",
+      //     },
+      //   ],
+      // },
       {
-        name: "Hooks",
-        path: "/react/introduce",
-        children: [
-          {
-            name: "hooks使命",
-            path: "/react/introduce",
-          },
-        ],
+        name: "事件处理",
+        path: "/react/eventProcess",
       },
       {
-        name: "React事件",
-        path: "/react/eventprocess",
-        children: [
-          {
-            name: "事件处理",
-            path: "/react/eventprocess",
-          },
-          {
-            name: "自述合成事件",
-            path: "/react/syntheticevent",
-          },
-        ],
+        name: "自述合成事件",
+        path: "/react/compositeEvent",
+      },
+      {
+        name: "hooks使命",
+        path: "/react/introduce",
       },
       {
         name: "React 生命周期",
@@ -125,7 +137,7 @@ const showList = {
       },
       {
         name: "React Fiber",
-        path: "/react/fibercontrast",
+        path: "/react/fiberContrast",
       },
       // {
       //   name: "react-redux",

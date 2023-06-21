@@ -1,22 +1,22 @@
 <template>
   <PageTitle text="为什么VUE不使用Fiber？" />
-  <Pagecontent>
+  <PageContent>
     <h3>react vue 响应式原理</h3>
-    <Tagtext>
+    <TagText>
       从底层实现来看修改数据：在react中，组件的状态是不能被修改的，setState没有修改原来那块内存中的变量，而是去新开辟一块内存；
       而vue则是直接修改保存状态的那块原始内存。
-    </Tagtext>
+    </TagText>
     <div>
       所以经常能看到react相关的文章里经常会出现一个词"immutable"，翻译过来就是不可变的。
     </div>
     <h4>react视图的更新：</h4>
-    <Tagtext>
+    <TagText>
       react中，调用setState方法后，会自顶向下重新渲染组件，自顶向下的含义是，该组件以及它的子组件全部需要渲染；
-    </Tagtext>
+    </TagText>
     <h4>Vue视图的更新：</h4>
-    <Tagtext>
+    <TagText>
       vue使用Object.defineProperty（vue@3迁移到了Proxy）对数据的设置（setter）和获取（getter）做了劫持，也就是说，vue能准确知道视图模版中哪一块用到了这个数据，并且在这个数据修改时，告诉这个视图，你需要重新渲染了。
-    </Tagtext>
+    </TagText>
     <p>
       所以当一个数据改变，react的组件渲染是很消耗性能的——父组件的状态更新了，所有的子组件得跟着一起渲染，它不能像vue一样，精确到当前组件的粒度。
     </p>
@@ -99,5 +99,5 @@
       </li>
       <li>2、通过模板语法静态编译，实现收集依赖。</li>
     </ul>
-  </Pagecontent>
+  </PageContent>
 </template>

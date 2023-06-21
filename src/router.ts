@@ -1,36 +1,36 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "./view/Home.vue";
-import Docpage from "./view/Docpage.vue";
+import DocPage from "./view/DocPage.vue";
 /**这是js模块 */
 import letConst from "./lib/JS/letConst.vue";
 import Parameter from "./lib/JS/Parameter.vue";
 import ClassArray from "./lib/JS/ClassArray.vue";
 import Closure from "./lib/JS/Closure.vue";
 import Prototype from "./lib/JS/Prototype.vue";
-import Packagetool from "./lib/JS/Packagetool.vue";
-import Newintroduce from "./lib/JS/Newintroduce.vue";
-import FCexpress from "./lib/JS/FCexpress.vue";
-import Stackheap from "./lib/JS/Stackheap.vue";
-import Moduleloaded from "./lib/JS/Moduleloaded.vue";
-import Eventagent from "./lib/JS/Eventagent.vue";
+import PackAgeTool from "./lib/JS/PackAgeTool.vue";
+import NewIntroduce from "./lib/JS/NewIntroduce.vue";
+import FCExpress from "./lib/JS/FCExpress.vue";
+import StackHeap from "./lib/JS/StackHeap.vue";
+import ModuleLoaded from "./lib/JS/ModuleLoaded.vue";
+import EventAgent from "./lib/JS/EventAgent.vue";
 /** 这是CSS模块*/
-import Multipleborders from "./lib/CSS/Multipleborders.vue";
-import Stripesbackground from "./lib/CSS/Stripesbackground.vue";
+import MultipleBorders from "./lib/CSS/MultipleBorders.vue";
+import StripesBackground from "./lib/CSS/StripesBackground.vue";
 import Ellipse from "./lib/CSS/Ellipse.vue";
-import Poptip from "./lib/CSS/Poptip.vue";
+import PopTip from "./lib/CSS/PopTip.vue";
 import Interview from "./lib/CSS/Interview.vue";
-import Gridstudy from "./lib/CSS/Gridstudy.vue";
-import Htmllable from "./lib/CSS/Htmllable.vue";
-import Bggradient from "./lib/CSS/Bggradient.vue";
+import GridStudy from "./lib/CSS/GridStudy.vue";
+import HtmlTag from "./lib/CSS/HtmlTag.vue";
+import BgGradation from "./lib/CSS/BgGradation.vue";
 import FlexStudy from "./lib/CSS/FlexStudy.vue";
 /**这是React模块 */
 import React from "./lib/React/index.vue";
 import Introduce from "./lib/React/React-hooks/introduce.vue";
-import Reactredux from "./lib/React/React-redux/index.vue";
-import Eventprocess from "./lib/React/Event/Eventprocess.vue";
-import Syntheticevent from "./lib/React/Event/Syntheticevent.vue";
+import ReactRedux from "./lib/React/React-redux/index.vue";
+import EventProcess from "./lib/React/Event/EventProcess.vue";
+import CompositeEvent from "./lib/React/Event/CompositeEvent.vue";
 import Lifecycle from "./lib/React/Lifecycle.vue";
-import Fibercontrast from "./lib/React/Fibercontrast.vue";
+import FiberContrast from "./lib/React/FiberContrast.vue";
 /**这是面试问题模块 */
 import CrossDomain from "./lib/Interview/CrossDomain.vue";
 
@@ -41,7 +41,7 @@ const router = createRouter({
     { path: "/", component: Home },
     {
       path: "/doc",
-      component: Docpage,
+      component: DocPage,
       redirect: "/doc/letConst",
       children: [
         // 这是js模块
@@ -50,22 +50,22 @@ const router = createRouter({
         { path: "classArray", component: ClassArray },
         { path: "closure", component: Closure },
         { path: "prototype", component: Prototype },
-        { path: "packagetool", component: Packagetool },
-        { path: "newintroduce", component: Newintroduce },
-        { path: "fcexpress", component: FCexpress },
-        { path: "stackHeap", component: Stackheap },
-        { path: "moduleLoaded", component: Moduleloaded },
-        { path: "eventagent", component: Eventagent },
+        { path: "packAgeTool", component: PackAgeTool },
+        { path: "newIntroduce", component: NewIntroduce },
+        { path: "FCExPress", component: FCExpress },
+        { path: "stackHeap", component: StackHeap },
+        { path: "moduleLoaded", component: ModuleLoaded },
+        { path: "eventAgent", component: EventAgent },
         // 这是CSS模块
-        { path: "multipleborders", component: Multipleborders },
-        { path: "stripesbackground", component: Stripesbackground },
+        { path: "multipleBorders", component: MultipleBorders },
+        { path: "stripesBackground", component: StripesBackground },
         { path: "ellipse", component: Ellipse },
-        { path: "poptip", component: Poptip },
+        { path: "popTip", component: PopTip },
         { path: "interview", component: Interview },
-        { path: "gridstudy", component: Gridstudy },
-        { path: "htmllable", component: Htmllable },
-        { path: "bggradient", component: Bggradient },
-        { path: "flexstudy", component: FlexStudy },
+        { path: "gridStudy", component: GridStudy },
+        { path: "htmlTag", component: HtmlTag },
+        { path: "bgGradation", component: BgGradation },
+        { path: "flexStudy", component: FlexStudy },
         //这是react模块
         {
           path: "react",
@@ -73,11 +73,11 @@ const router = createRouter({
           redirect: "/doc/react/introduce",
           children: [
             { path: "introduce", component: Introduce },
-            { path: "redux", component: Reactredux },
-            { path: "eventprocess", component: Eventprocess },
-            { path: "syntheticevent", component: Syntheticevent },
+            { path: "redux", component: ReactRedux },
+            { path: "eventProcess", component: EventProcess },
+            { path: "compositeEvent", component: CompositeEvent },
             { path: "lifecycle", component: Lifecycle },
-            { path: "fibercontrast", component: Fibercontrast },
+            { path: "fiberContrast", component: FiberContrast },
           ],
         },
         //这是面试问题模块

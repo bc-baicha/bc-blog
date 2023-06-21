@@ -1,6 +1,6 @@
 <template>
   <PageTitle text="hooks的使命" />
-  <Pagecontent>
+  <PageContent>
     <h4>逻辑组件复用</h4>
     <ul>
       <li>
@@ -21,5 +21,5 @@
     <p>
       把一个页面拆分成多个独立，可复用的组件，并且使用自上而下的数据流串联起来，但是大型项目中会发现组件代码很冗长，想要去复用这些组件变得很难，尤其是那些类组件，因为它们本身就包含了状态(state)，所以复用这些组件很困难。
     </p>
-  </Pagecontent>
+  </PageContent>
 </template>

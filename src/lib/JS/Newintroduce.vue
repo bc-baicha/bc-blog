@@ -1,17 +1,17 @@
 <template>
   <PageTitle text="JS 中New的作用" />
-  <Pagecontent>
+  <PageContent>
     <h4>MDN上的介绍：</h4>
-    <Tagtext>
+    <TagText>
       new
-      运算符创建一个用户定义的对象类型的实例或具有构造函数的内置对象的实例。</Tagtext
+      运算符创建一个用户定义的对象类型的实例或具有构造函数的内置对象的实例。</TagText
     >
     <h4>接下来使用一个例子说明：</h4>
     <div>
       我们在做一个攻防游戏，在游戏中可以造士兵去进行攻击，下面我们就研究下造兵的过程
     </div>
     <p>一个士兵的属性在计算机中都是一堆数据：</p>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 士兵 = {
@@ -27,12 +27,12 @@
 //这样我们就造好了一个士兵;
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <div>
       如果我们需要建造一百个这样的士兵呢？<br />
       循环100次吧！
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 let warriores = []; //士兵总数
@@ -52,7 +52,7 @@ for (let i = 0; i &lt; 100; i++) {
 //这样我们就创造了100个士兵;
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <div>
       但是我们发现，每个士兵的兵种，攻击力，生命值，移动，死亡，攻击这些属性都是相同的，<br />
       只有ID是不同的，因为每个士兵都有自己的ID，<br />
@@ -62,7 +62,7 @@ for (let i = 0; i &lt; 100; i++) {
       这时就要进行代码的优化，我们知道通过原型链可以解决重复创建的问题，<br />
       我们先创建一个士兵的原型，然后让士兵的__proto__指向士兵的原型;
     </p>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 士兵原型 = {
@@ -88,9 +88,9 @@ for (let i = 0; i &lt; 100; i++) {
 
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <div>可以看出还有优化的空间，使用函数封装下：</div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 士兵原型 = {
@@ -121,9 +121,9 @@ for (let i = 0; i &lt; 100; i++) {
 兵营.批量制造(warriores);
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <div>使用new来进行创造士兵：</div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 士兵原型 = {
@@ -148,7 +148,7 @@ for (let i = 0; i &lt; 100; i++) {
 兵营.批量制造(warriores);
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <div>从上面的代码我们可以看出new帮我们做了哪些事情:</div>
     <div>1、创建临时对象</div>
     <div>2、绑定原型</div>
@@ -156,7 +156,7 @@ for (let i = 0; i &lt; 100; i++) {
     <div>4、执行构造函数</div>
     <div>5、返回临时对象</div>
     <h4>这里需要注意constructor</h4>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 //new 操作为了记录「临时对象是由哪个函数创建的」，
@@ -173,6 +173,6 @@ for (let i = 0; i &lt; 100; i++) {
 士兵.prototype.生命值 = 30;
         </code>
       </pre>
-    </Heightcode>
-  </Pagecontent>
+    </HeightCode>
+  </PageContent>
 </template>

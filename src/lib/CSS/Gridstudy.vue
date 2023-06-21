@@ -1,19 +1,19 @@
 <template>
   <PageTitle text="Grid 学习" />
-  <Pagecontent>
+  <PageContent>
     <h3>Grid 的布局属性</h3>
-    <Tagtext>
+    <TagText>
       一类定义在容器上面，称为容器属性；另一类定义在项目上面，称为项目属性。
-    </Tagtext>
+    </TagText>
     <h4>1、display 属性</h4>
-    <Tagtext
+    <TagText
       >display: grid
       指定一个容器采用网格布局。默认情况下，容器元素都是块级元素，但也可以设成行内元素。
       display: inline-grid;<br /><br />
       注意，设为网格布局以后，容器子元素（项目）的float、display:
       inline-block、display:
       table-cell、vertical-align和column-*等设置都将失效。
-    </Tagtext>
+    </TagText>
     <h4>2、grid-template-columns 属性，grid-template-rows 属性</h4>
     <p>case1:</p>
     <div class="container">
@@ -27,7 +27,7 @@
         {{ item }}
       </div>
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 .pubilcDiv {
@@ -50,7 +50,7 @@
 }     
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <h4>1.repeat()</h4>
     <div>
       repeat()接受两个参数，第一个参数是重复的次数，第二个参数是所要重复的值。
@@ -67,7 +67,7 @@
         {{ item }}
       </div>
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 .container3 {
@@ -84,7 +84,7 @@
 }
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <h4>2.auto-fill 关键字</h4>
     <div>
       有时，单元格的大小是固定的，但是容器的大小不确定。如果希望每一行（或每一列）容纳尽可能多的单元格，这时可以使用auto-fill关键字表示自动填充。
@@ -94,7 +94,7 @@
         {{ item }}
       </div>
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 .container5 {
@@ -105,7 +105,7 @@
 }        
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <h4>3.fr关键字</h4>
     <div>比例关系：如果两列的宽度分别为1fr和2fr，就表示后者是前者的两倍。</div>
     <div class="container6">
@@ -113,7 +113,7 @@
         {{ item }}
       </div>
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 .container6 {
@@ -124,7 +124,7 @@
 }
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <h3>4.minmax()</h3>
     <div>
       minmax()函数产生一个长度范围，表示长度就在这个范围之中。它接受两个参数，分别为最小值和最大值
@@ -134,7 +134,7 @@
         {{ item }}
       </div>
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 .container7 {
@@ -145,7 +145,7 @@
 }
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <h3>5.auto关键字</h3>
     <div>自适应填充宽度</div>
     <div class="container8">
@@ -162,7 +162,7 @@
         {{ item }}
       </div>
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 .container9 {
@@ -175,7 +175,7 @@
 }
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <h3>7.grid-auto-flow 属性</h3>
     <div>
       划分网格以后，容器的子元素会按照顺序，自动放置在每一个网格。默认的放置顺序是"先行后列"，即先填满第一行，再开始放入第二行。这个顺序由grid-auto-flow属性决定，默认值是row，即"先行后列"。也可以将它设成column，变成"先列后行"。
@@ -195,7 +195,7 @@
         {{ item }}
       </div>
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 .container11 {
@@ -215,7 +215,7 @@
 }   
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <h3>9.grid-auto-columns 属性，grid-auto-rows 属性</h3>
     <div>
       有时候，一些项目的指定位置，在现有网格的外部。比如网格只有3列，但是某一个项目指定在第5行。这时，浏览器会自动生成多余的网格，以便放置项目。<br />
@@ -233,7 +233,7 @@
         {{ item }}
       </div>
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 .container15 {
@@ -251,14 +251,14 @@
 }
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <h3>case1:</h3>
     <div class="container13">
       <div v-for="item in [1, 2, 3, 4, 5, 6, 7, 8, 9]" :key="item">
         {{ item }}
       </div>
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 .container13 {
@@ -273,14 +273,14 @@
 }
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <h3>case2:</h3>
     <div class="container14">
       <div v-for="item in [1, 2, 3, 4, 5, 6, 7, 8, 9]" :key="item">
         {{ item }}
       </div>
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 .container14 {
@@ -299,8 +299,8 @@
 }    
         </code>
       </pre>
-    </Heightcode>
-  </Pagecontent>
+    </HeightCode>
+  </PageContent>
 </template>
 <style lang="less" scoped>
 @import "./girdstudy.less";

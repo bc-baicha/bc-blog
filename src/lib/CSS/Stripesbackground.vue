@@ -1,8 +1,8 @@
 <template>
   <PageTitle text="条纹背景" />
-  <Pagecontent>
+  <PageContent>
     <h3>进度条</h3>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 {{progress}}
@@ -50,7 +50,7 @@ main {
 }
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <main>
       <div class="progress-outer">
         <div class="progress-enter">
@@ -60,7 +60,7 @@ main {
       </div>
     </main>
     <h3>不规则卡片</h3>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 {{cards}}
@@ -81,11 +81,11 @@ main {
 }
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <div class="no-rule-card">
       <div class="coupon-card"></div>
     </div>
-  </Pagecontent>
+  </PageContent>
 </template>
 <script lang="ts">
 export default {

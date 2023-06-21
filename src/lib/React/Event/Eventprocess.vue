@@ -1,8 +1,8 @@
 <template>
   <PageTitle text="React 事件处理" />
-  <Pagecontent>
+  <PageContent>
     <h4>react事件和DOM事件</h4>
-    <Tablevue>
+    <TableVue>
       <tr>
         <th>react事件</th>
         <th>DOM事件</th>
@@ -19,8 +19,8 @@
         <th>e.preventDefalut</th>
         <th>onclick="javascript"</th>
       </tr>
-    </Tablevue>
-    <Heightcode>
+    </TableVue>
+    <HeightCode>
       <pre>
       <code>
 class ListItem extends Component {
@@ -44,7 +44,7 @@ class ListItem extends Component {
 }
       </code>
     </pre>
-    </Heightcode>
+    </HeightCode>
     <i>
       在面向对象的编程中，this的使用方法会随着引用对象的差别而不同，当被对象引用时指向的是对象，<br />
       单独函数引用指向的是window，严格模式是undefined，那我们在react中怎么解决这个问题呢？
@@ -55,7 +55,7 @@ class ListItem extends Component {
       <li>在构造函数中使用bind方法</li>
       <li>使用箭头函数</li>
     </ul>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 class ListItem extends Component {
@@ -83,7 +83,7 @@ class ListItem extends Component {
 }
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <h4>react事件机制</h4>
     <p>DOM事件</p>
     <div v-viewer>
@@ -113,5 +113,5 @@ class ListItem extends Component {
       <li>在document监听所有支持的事件</li>
       <li>使用统一的分发函数dispatchEvent</li>
     </ul>
-  </Pagecontent>
+  </PageContent>
 </template>

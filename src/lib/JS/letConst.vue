@@ -1,13 +1,13 @@
 <template>
   <PageTitle text="Let块级作用域和const" />
-  <Pagecontent>
+  <PageContent>
     <h3>为什么要使用块级作用域？</h3>
     <div>
       在es5中只有全局作用域和函数作用域，就会导致以下问题：<br />
       case1：内层变量覆盖外层变量<br />
       reason:函数作用域的声明，进行了变量提升，所以全局的变量被覆盖了
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 var time = new Date();
@@ -20,12 +20,12 @@ function test(){
 test()//undefined
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <div>
       case2：用来计数的循环变量，泄漏为全局变量 <br />
       reason:本意是i只作为循环变量，循环结束之后，i消失，但是现在i并没有消失，成为了全局变量
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 var s = 'hello';
@@ -37,7 +37,7 @@ for (var i = 0; i &lt; s.length; i++) {
 console.log(i);//5
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <div>case3：let 的出现使得匿名的立即执行函数，不在必要了</div>
     <h3>块级作用域和函数声明</h3>
     <div>
@@ -45,7 +45,7 @@ console.log(i);//5
       但是浏览器为了兼容老代码，所以支持了在块级作用域中声明。<br />
       注意：let块级作用域的声明，必须要有{}包括，否则JavaScript引擎是不承认的
     </div>
-    <Heightcode>
+    <HeightCode>
       <pre>
         <code>
 // 第一种写法，报错
@@ -57,7 +57,7 @@ if (true) {
 }
         </code>
       </pre>
-    </Heightcode>
+    </HeightCode>
     <h3>let 解析</h3>
     <div>
       声明的变量不会进行变量提升，称之为暂时性死区。<br />
@@ -71,12 +71,12 @@ if (true) {
       如果初始化没有进行赋值，就会报错。
     </div>
     <h3>const 数据修改</h3>
-    <Tagtext>
+    <TagText>
       const声明的变量，不得改变，实际上是指，变量指向内存地址保存的数据不能更改，基本数据类型，存储在栈中，是一些简易的字段。<br />
       而引用数据类型，数据存储在堆内存中，声明的变量，只是一个指向堆内存空间的指针，<br />
       const只能保证指针不发生改变，但是堆内存中的数据结构和值是否发生改变，就不能完全控制了，因此，声明常量时要小心。
-    </Tagtext>
-    <Heightcode>
+    </TagText>
+    <HeightCode>
       <pre>
         <code>
 const obj = {
@@ -88,6 +88,6 @@ obj.num = "2";
 console.log(obj.num); //2
         </code>
       </pre>
-    </Heightcode>
-  </Pagecontent>
+    </HeightCode>
+  </PageContent>
 </template>
