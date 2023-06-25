@@ -171,6 +171,10 @@ const showList = {
         name: "SpaSeo理解",
         path: "/inter/spaSeoSsr",
       },
+      {
+        name: "TS问题",
+        path: "/inter/tsProblem",
+      },
     ],
   },
 };

@@ -36,6 +36,7 @@ import StateManage from "./lib/React/StateManage.vue";
 /**这是面试问题模块 */
 import CrossDomain from "./lib/Interview/CrossDomain.vue";
 import SpaSeoSsr from "./lib/Interview/SpaSeo.vue";
+import TsProblem from "./lib/Interview/TsProblem.vue";
 
 const history = createWebHashHistory();
 const router = createRouter({
@@ -88,6 +89,7 @@ const router = createRouter({
         //这是面试问题模块
         { path: "inter/crossDomain", component: CrossDomain },
         { path: "inter/spaSeoSsr", component: SpaSeoSsr },
+        { path: "inter/tsProblem", component: TsProblem },
       ],
     },
   ],
