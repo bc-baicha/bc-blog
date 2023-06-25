@@ -175,6 +175,10 @@ const showList = {
         name: "TS问题",
         path: "/inter/tsProblem",
       },
+      {
+        name: "webpack问题",
+        path: "/inter/webpackModel",
+      },
     ],
   },
 };
