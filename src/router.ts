@@ -31,6 +31,7 @@ import EventProcess from "./lib/React/Event/EventProcess.vue";
 import CompositeEvent from "./lib/React/Event/CompositeEvent.vue";
 import Lifecycle from "./lib/React/Lifecycle.vue";
 import FiberContrast from "./lib/React/FiberContrast.vue";
+import ReactDiff from "./lib/React/ReactDiff.vue";
 /**这是面试问题模块 */
 import CrossDomain from "./lib/Interview/CrossDomain.vue";
 
@@ -78,6 +79,7 @@ const router = createRouter({
             { path: "compositeEvent", component: CompositeEvent },
             { path: "lifecycle", component: Lifecycle },
             { path: "fiberContrast", component: FiberContrast },
+            { path: "reactDiff", component: ReactDiff },
           ],
         },
         //这是面试问题模块

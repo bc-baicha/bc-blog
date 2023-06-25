@@ -139,6 +139,10 @@ const showList = {
         name: "React Fiber",
         path: "/react/fiberContrast",
       },
+      {
+        name: "React Diff",
+        path: "/react/reactDiff",
+      },
       // {
       //   name: "react-redux",
       //   path: '/react/redux',
