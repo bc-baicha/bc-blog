@@ -1,0 +1,24 @@
+<template>
+  <PageTitle text="状态管理工具" />
+  <PageContent>
+    <h3>为什么使用状态管理工具？</h3>
+    <p>
+      因为react是单向数据流，数据从父组件流向子组件，但是非父子组件之间通信就变得很麻烦，所以我们就需要状态管理工具。
+    </p>
+    <h3>redux设计理念：</h3>
+    <ul>
+      <li>1、使用唯一数据源，只有一个store</li>
+      <li>2、保持只读状态，使用getState获取store的值</li>
+      <li>
+        3、想要修改store里面的值，必须通过纯函数来修改，通过dispatch来发射事件，它有两个参数，type和payload，根据type来判断类型执行什么操作，然后在reducers里面接收执行对应的操作函数修改state的值
+      </li>
+    </ul>
+    <h3>缺点：</h3>
+    <ul>
+      <li>1、每次都要发送dispatch事件函数</li>
+      <li>
+        2、当一个组件的数据更新时，即使父组件不需要用到这个组件，但是还是会触发render函数，影响效率，此时我们想要优化的话，可以shouldcomponentUpdate进行一些判断。
+      </li>
+    </ul>
+  </PageContent>
+</template>

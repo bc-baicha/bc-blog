@@ -143,6 +143,10 @@ const showList = {
         name: "React Diff",
         path: "/react/reactDiff",
       },
+      {
+        name: "状态管理",
+        path: "/react/stateManage",
+      },
       // {
       //   name: "react-redux",
       //   path: '/react/redux',
@@ -162,6 +166,10 @@ const showList = {
       {
         name: "前端跨域问题",
         path: "/inter/crossDomain",
+      },
+      {
+        name: "SpaSeo理解",
+        path: "/inter/spaSeoSsr",
       },
     ],
   },

@@ -32,8 +32,10 @@ import CompositeEvent from "./lib/React/Event/CompositeEvent.vue";
 import Lifecycle from "./lib/React/Lifecycle.vue";
 import FiberContrast from "./lib/React/FiberContrast.vue";
 import ReactDiff from "./lib/React/ReactDiff.vue";
+import StateManage from "./lib/React/StateManage.vue";
 /**这是面试问题模块 */
 import CrossDomain from "./lib/Interview/CrossDomain.vue";
+import SpaSeoSsr from "./lib/Interview/SpaSeo.vue";
 
 const history = createWebHashHistory();
 const router = createRouter({
@@ -80,10 +82,12 @@ const router = createRouter({
             { path: "lifecycle", component: Lifecycle },
             { path: "fiberContrast", component: FiberContrast },
             { path: "reactDiff", component: ReactDiff },
+            { path: "stateManage", component: StateManage },
           ],
         },
         //这是面试问题模块
         { path: "inter/crossDomain", component: CrossDomain },
+        { path: "inter/spaSeoSsr", component: SpaSeoSsr },
       ],
     },
   ],
