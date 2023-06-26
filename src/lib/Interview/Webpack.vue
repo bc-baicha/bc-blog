@@ -28,7 +28,7 @@
       2、css-loader :允许将css文件通过require的方式引入，并返回css代码<br />
       3、less-loader: 处理less <br />
       4、sass-loader: 处理sass <br />
-      5、postcss-loader: css样式后处理工具，css压缩、合并、自动兼容浏览器<br />
+      5、postCss-loader: css样式后处理工具，css压缩、合并、自动兼容浏览器<br />
       6、file-loader: 分发文件到output目录并返回相对路径<br />
       7、url-loader:
       和file-loader类似，但是当文件小于设定的limit时会转化为base64的数据，替换URL引入<br />
