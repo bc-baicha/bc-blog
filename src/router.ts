@@ -38,6 +38,7 @@ import CrossDomain from "./lib/Interview/CrossDomain.vue";
 import SpaSeoSsr from "./lib/Interview/SpaSeo.vue";
 import TsProblem from "./lib/Interview/TsProblem.vue";
 import WebpackModel from "./lib/Interview/Webpack.vue";
+import ShakeThrottling from "./lib/Interview/ShakeThrottling.vue";
 
 const history = createWebHashHistory();
 const router = createRouter({
@@ -92,6 +93,7 @@ const router = createRouter({
         { path: "inter/spaSeoSsr", component: SpaSeoSsr },
         { path: "inter/tsProblem", component: TsProblem },
         { path: "inter/webpackModel", component: WebpackModel },
+        { path: "inter/shakeThrottling", component: ShakeThrottling },
       ],
     },
   ],

@@ -179,6 +179,10 @@ const showList = {
         name: "webpack问题",
         path: "/inter/webpackModel",
       },
+      {
+        name: "防抖和节流",
+        path: "/inter/shakeThrottling",
+      },
     ],
   },
 };
