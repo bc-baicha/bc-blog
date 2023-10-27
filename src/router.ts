@@ -39,6 +39,8 @@ import SpaSeoSsr from "./lib/Interview/SpaSeo.vue";
 import TsProblem from "./lib/Interview/TsProblem.vue";
 import WebpackModel from "./lib/Interview/Webpack.vue";
 import ShakeThrottling from "./lib/Interview/ShakeThrottling.vue";
+/**这是NESTJS学习 */
+import NestHome from "./lib/NESTJS/Home.vue";
 
 const history = createWebHashHistory();
 const router = createRouter({
@@ -94,6 +96,8 @@ const router = createRouter({
         { path: "inter/tsProblem", component: TsProblem },
         { path: "inter/webpackModel", component: WebpackModel },
         { path: "inter/shakeThrottling", component: ShakeThrottling },
+        //这是nestjs学习模块
+        { path: "nestjs/home", component: NestHome },
       ],
     },
   ],

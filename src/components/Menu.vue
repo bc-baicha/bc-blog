@@ -4,6 +4,7 @@
     <Directory :list="showList.css" />
     <Directory :list="showList.react" />
     <Directory :list="showList.interview" />
+    <Directory :list="showList.nestjs" />
   </div>
 </template>
 <script lang="ts">
